@@ -1,4 +1,4 @@
-# ACM UCR Website Template
+# JM Products Website
 
 ![Next.js](https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
@@ -11,7 +11,7 @@
 
 ## Figma
 
-[ACM UCR Website Template Figma Design File](https://www.figma.com/)
+[JM Products Website Figma Design File](https://www.figma.com/design/4nJNXzc99PRGC7HCTUSmo5/J%26M-Products?node-id=0-1&t=6wl5wWpp5T3QTIbX-1)
 
 ## Node.js
 
