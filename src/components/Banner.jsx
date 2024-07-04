@@ -1,7 +1,7 @@
 import React from "react";
-import bannerImg from "../../public/images/Banner.webp";
-import BannerDecor1 from "../../public/svg/BannerDecor1.svg";
-import BannerDecor2 from "../../public/svg/BannerDecor2.svg";
+import bannerImg from "@/public/images/Banner.webp";
+import BannerDecor1 from "@/public/svg/BannerDecor1.svg";
+import BannerDecor2 from "@/public/svg/BannerDecor2.svg";
 import Image from "next/image";
 
 const Banner = ({ text }) => {
