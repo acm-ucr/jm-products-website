@@ -1,17 +1,16 @@
 import React from "react";
 
-// Props go here
 const BlueBoxes = () => {
   return (
-    <div className="bg-red-200 w-2/3 h-32">
-      <div className="bg-jm-blue-100 ">
-        <p>Prop1</p>
+    <div className="flex justify-center bg-red-200 w-2/3 h-32 mx-auto">
+      <div className="bg-sky-400 w-1/3 h-32 flex items-center justify-center">
+        <p class="text-white font-medium">Box1</p>
       </div>
-      <div className="bg-jm-blue-200">
-        <p>Prop2</p>
+      <div className="bg-sky-700 w-1/3 h-32 flex items-center justify-center">
+        <p class="text-white font-medium">Box2</p>
       </div>
-      <div className="bg-jm-blue-300">
-        <p>Prop3</p>
+      <div className="bg-sky-900 w-1/3 h-32 flex items-center justify-center">
+        <p class="text-white font-medium">Box3</p>
       </div>
     </div>
   );
