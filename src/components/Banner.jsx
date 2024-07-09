@@ -1,5 +1,5 @@
 import React from "react";
-import bannerImg from "@/public/images/Banner.webp";
+import bannerImg from "@/public/images/Banner.png";
 import BannerDecor1 from "@/public/svg/BannerDecor1.svg";
 import BannerDecor2 from "@/public/svg/BannerDecor2.svg";
 import Image from "next/image";
@@ -16,7 +16,7 @@ const Banner = ({ text }) => {
       <div className="absolute start-0 end-0 inset-y-2/3 pr-4">
         <Image src={BannerDecor1} alt="Banner Decor 1" className="w-1/6" />
       </div>
-      <div className="absolute bottom-0 right-0 inset-y-3/4">
+      <div className="absolute end-0 inset-y-2/3 w-1/5">
         <Image src={BannerDecor2} alt="Banner Decor 2" className="w-full" />
       </div>
     </div>
