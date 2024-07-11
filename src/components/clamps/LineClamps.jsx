@@ -4,10 +4,11 @@ import LineClamp1 from "@/public/images/lineclamps/LineClamp1.webp";
 import LineClamp2 from "@/public/images/lineclamps/LineClamp2.webp";
 import LineClamp3 from "@/public/images/lineclamps/LineClamp3.webp";
 import LineClamp4 from "@/public/images/lineclamps/LineClamp4.webp";
+import { IoDocumentTextOutline } from "react-icons/io5";
 
 const LineClamps = () => {
   return (
-    <div className="flex items-center flex-col gap-10">
+    <div className="flex items-center flex-col gap-10 px-3">
       <Description
         text={
           "J&M Products Line Support Clamps and Brackets are selected by major aerospace, transportation and industrial equipment manufacturers for use in widely varying applications including exposure to hydraulic, fuel, pneumatic and electrical systems."
@@ -34,7 +35,15 @@ const LineClamps = () => {
         img={LineClamp4}
         float={"right"}
       />
-      View Our Clamp Catalog
+      <div className="text-jm-blue-200 underline flex flex-row gap-3">
+        <a
+          href="http://www.jmproducts.com/JMPdocs/JMPcatalogue2001.pdf"
+          target="_blank"
+        >
+          View Our Clamp Catalog
+        </a>
+        <IoDocumentTextOutline />
+      </div>
     </div>
   );
 };
