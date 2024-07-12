@@ -1,25 +1,20 @@
 import React from "react";
 import Image from "next/image";
+import decor from "@/public/svg/AboutDecor.svg";
+import infoIcon from "@/public/svg/AboutInfoIcon.svg";
+import Button from "@/components/Button";
 
 const AboutJM = () => {
   return (
     <div className="flex">
       <Image
-        src="/svg/AboutDecor.svg"
+        src={decor}
         alt="Placeholder"
-        width={401}
-        height={401}
         className="mr-4 mt-24 mb-12 pr-7 py-0.5"
       />
       <div className="mr-32 flex flex-col justify-center">
         <div className="flex">
-          <Image
-            src="/svg/AboutInfoIcon.svg"
-            alt="Placeholder"
-            width={60}
-            height={60}
-            className="mr-2.5"
-          />
+          <Image src={infoIcon} alt="Placeholder" className="mr-2.5" />
           <p className="mb-2 content-center text-4xl font-hk font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#3A4F85] to-[#8EA7C7]">
             ABOUT J&M
           </p>
@@ -33,7 +28,7 @@ const AboutJM = () => {
           is AS9100 / ISO9001 and NADCAP certified.
         </p>
         <div className="flex justify-end">
-          <div className="">Button</div>
+          <Button text="Learn More" link="/about" />
         </div>
       </div>
     </div>
