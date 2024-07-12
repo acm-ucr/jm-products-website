@@ -10,7 +10,7 @@ const WireHarnesses = () => {
     <div className="flex items-center flex-col gap-10 px-3">
       <Description
         text={
-          "J&M Products manufactures a variety of wire harnesses serving a broad range of customers including class 8 trucks, aircraft systems, marine, medical, vehicle accessories, and utility body manufacturers. We have the capability to manufacture wire harnesses from 18 gauge to 30 gauge wire. Our wire harnesses are manufactured to meet the requirements of the customer and are built to IPC/WHMA-A-620B Class 2 standards"
+          "J&M Products manufactures a variety of wire harnesses serving a broad range of customers including class 8 trucks, aircraft systems, marine, medical, vehicle accessories, and utility body manufacturers."
         }
         img={WireHarness1}
       />
