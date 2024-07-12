@@ -5,6 +5,7 @@ import LineClamp2 from "@/public/images/lineclamps/LineClamp2.webp";
 import LineClamp3 from "@/public/images/lineclamps/LineClamp3.webp";
 import LineClamp4 from "@/public/images/lineclamps/LineClamp4.webp";
 import { IoDocumentTextOutline } from "react-icons/io5";
+import Link from "next/link";
 
 const LineClamps = () => {
   return (
@@ -36,12 +37,9 @@ const LineClamps = () => {
         float={"right"}
       />
       <div className="text-jm-blue-200 underline flex flex-row gap-3">
-        <a
-          href="http://www.jmproducts.com/JMPdocs/JMPcatalogue2001.pdf"
-          target="_blank"
-        >
+        <Link href="http://www.jmproducts.com/JMPdocs/JMPcatalogue2001.pdf">
           View Our Clamp Catalog
-        </a>
+        </Link>
         <IoDocumentTextOutline />
       </div>
     </div>
