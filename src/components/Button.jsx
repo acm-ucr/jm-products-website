@@ -5,7 +5,7 @@ const Button = ({ text, link }) => {
   return (
     <Link
       href={link}
-      className="bg-white border-jm-blue-200 border-2 rounded-lg px-7 py-2.5"
+      className="bg-white border-jm-blue-200 border-2 rounded-lg px-7 py-2.5 hover:bg-jm-blue-100"
     >
       <p className="text-jm-blue-200 font-bold text-base tracking-widest text-center">
         {text}
