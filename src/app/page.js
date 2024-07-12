@@ -1,14 +1,16 @@
-import BlueBoxes from "@/components/BlueBoxes";
-import Header from "@/components/about/Header";
+import Landing from "@/components/Landing";
+import AboutJM from "@/components/home/AboutJM";
+import OurManufacturingServices from "@/components/home/OurManufacturingServices";
+import PhotoStrip from "@/components/home/PhotoStrip";
 
 const Home = () => {
   return (
-    <>
-      <div className="flex justify-center items-center space-x-4 my-10 h-20"></div>
-      <Header />
-      <BlueBoxes text1={"Box 1"} text2={"Box 2"} text3={"Box 3"} />
-    </>
+    <div className="w-full flex flex-col justify-center items-center gap-10">
+      <Landing />
+      <AboutJM />
+      <OurManufacturingServices />
+      <PhotoStrip />
+    </div>
   );
 };
-
 export default Home;
