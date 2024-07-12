@@ -1,17 +1,11 @@
 import React from "react";
+import Image from "next/image";
+import PhotoSlider from "@/public/images/JMPhotoStrip.webp";
 
 const PhotoStrip = () => {
-  // URL of the image
-  const imageSrc = "/images/JMPhotoStrip.webp";
-
   return (
     <div className="flex">
-      <img
-        src={imageSrc}
-        alt="Random"
-        className="w-full max-w-full rounded-lg shadow-lg object-cover"
-        style={{ height: "auto" }}
-      />
+      <Image src={PhotoSlider} alt="Picture of parts" />
     </div>
   );
 };
