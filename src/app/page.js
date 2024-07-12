@@ -1,16 +1,13 @@
-import Landing from "@/components/Landing";
-import AboutJM from "@/components/home/AboutJM";
-import OurManufacturingServices from "@/components/home/OurManufacturingServices";
-import PhotoStrip from "@/components/home/PhotoStrip";
+import React from "react";
+import CustomerConcerns from "@/components/outsourcing/CustomerConcerns";
 
-const Home = () => {
+const Page = () => {
   return (
-    <div className="w-full flex flex-col justify-center items-center gap-10">
-      <Landing />
-      <AboutJM />
-      <OurManufacturingServices />
-      <PhotoStrip />
+    <div>
+      <h1>Page</h1>
+      <CustomerConcerns />
     </div>
   );
 };
-export default Home;
+
+export default Page;
