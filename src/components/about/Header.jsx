@@ -2,12 +2,12 @@ import React from "react";
 
 const Header = ({ title }) => {
   return (
-    <div className="mt-8 ml-8">
-      <p className="font-sans-hk text-[48px] font-bold tracking-widest text-jm-blue-200">
+    <div className="mt-7 ml-7">
+      <p className="font-hk bg-gradient-to-r from-jm-blue-300 to-jm-blue-100 bg-clip-text text-transparent text-[48px] tracking-widest font-bold">
         WHO WE ARE
         {title}
       </p>
-      <hr className="border-t-2 border-jm-blue-200 mt-2 w-3/4" />
+      <hr className="border-t-4 border-jm-blue-200 mt-0 w-3/4" />
     </div>
   );
 };
