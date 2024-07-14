@@ -21,11 +21,13 @@ const Footer = () => {
         <p>All Rights Reserved.</p>
       </div>
       <div className="flex flex-col items-end">
-        {data.map((item, index) => (
-          <Link key={index} href={item.link} target="_blank">
-            {item.icon}
-          </Link>
-        ))}
+        <div className="grid grid-cols-2 justify-end gap-1">
+          {data.map((item, index) => (
+            <Link key={index} href={item.link} target="_blank">
+              {item.icon}
+            </Link>
+          ))}
+        </div>
       </div>
     </div>
   );
