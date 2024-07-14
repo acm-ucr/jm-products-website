@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import PhotoSlider from "@/public/images/JMPhotoStrip.webp";
+import PhotoSlider from "@/public/images/home/JMPhotoStrip.webp";
 
 const PhotoStrip = () => {
   return (
