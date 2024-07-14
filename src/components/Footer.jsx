@@ -6,7 +6,7 @@ import { AiFillFacebook } from "react-icons/ai";
 
 const Footer = () => {
   return (
-    <div className="w-full grid grid-cols-3 grid-rows-2 py-5 px-10 gap-2 font-sans-javanese text-sm leading-5">
+    <div className="w-full grid grid-cols-3 grid-rows-2 py-5 px-10 gap-2 font-javanese text-sm leading-5">
       <div className="grid grid-cols-subgrid gap-4 col-span-3">
         <div className="flex justify-center col-start-2 h-11">
           <Image alt="logo" src={logo} className="object-contain" />

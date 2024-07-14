@@ -19,7 +19,7 @@ const AboutJM = () => {
             ABOUT J&M
           </p>
         </div>
-        <p className="my-7 mx-16 font-hk text-xl font-normal">
+        <p className="my-7 mx-16 font-hk text-xl font-normal ">
           Since 1963, J&M Products has been a leading manufacturer of line
           support clamps, brackets and electrical wire harness assemblies.
           Recognized through multiple awards for high quality and on-time

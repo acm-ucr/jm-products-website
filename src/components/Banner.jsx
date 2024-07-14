@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const Banner = ({ text }) => {
   return (
-    <div className="relative">
+    <div className="relative font-hk">
       <Image src={bannerImg} alt="Banner Picture" className="w-full" />
       <div className="absolute inset-y-2/3 start-1/4">
         <h1 className="text-white text-lg md:text-4xl lg:text-5xl xl:text-6xl font-bold">
