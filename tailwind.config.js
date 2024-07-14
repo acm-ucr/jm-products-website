@@ -8,6 +8,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        hk: ["var(--font-hk)"],
+        javanese: ["var(--font-javanese)"],
+      },
       colors: {
         jm: {
           red: "#BA001E",
@@ -17,10 +21,6 @@ module.exports = {
         },
       },
     },
-  },
-  fontFamily: {
-    hk: ["var(--font-sans-hk)"],
-    javanese: ["var(--font-sans-javanese)"],
   },
   plugins: [],
 };
