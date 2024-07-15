@@ -3,7 +3,7 @@ import React from "react";
 const Header = ({ title }) => {
   return (
     <div className="mt-7 ml-7">
-      <p className="font-hk bg-gradient-to-r from-jm-blue-300 to-jm-blue-100 bg-clip-text text-transparent text-[48px] tracking-widest font-bold">
+      <p className="font-hk bg-gradient-to-r from-jm-blue-300 to-jm-blue-100 bg-clip-text text-transparent text-5xl tracking-widest font-bold">
         WHO WE ARE
         {title}
       </p>
@@ -11,5 +11,5 @@ const Header = ({ title }) => {
     </div>
   );
 };
-
+r;
 export default Header;
