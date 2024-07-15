@@ -27,9 +27,18 @@ const Footer = () => {
               key={index}
               className="flex flex-row gap-2 justify-end items-center"
             >
-              {index === 0 && <a href={item.contact}>{item.contact}</a>}
+              {index === 0 && (
+                <a className="hover:underline" href={item.contact}>
+                  {item.contact}
+                </a>
+              )}
               {index > 0 && <p>{item.contact}</p>}
-              <Link key={index} href={item.link} target="_blank">
+              <Link
+                key={index}
+                href={item.link}
+                target="_blank"
+                className="hover:-translate-y-0.5"
+              >
                 {item.icon}
               </Link>
             </div>
