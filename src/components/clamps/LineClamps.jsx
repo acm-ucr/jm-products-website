@@ -36,8 +36,11 @@ const LineClamps = () => {
         img={LineClamp4}
         float={"right"}
       />
-      <div className="text-jm-blue-200 underline flex flex-row gap-3">
-        <Link href="http://www.jmproducts.com/JMPdocs/JMPcatalogue2001.pdf">
+      <div className="text-jm-blue-200 underline flex flex-row gap-3 hover:text-jm-blue-300">
+        <Link
+          href="http://www.jmproducts.com/JMPdocs/JMPcatalogue2001.pdf"
+          target="_blank"
+        >
           View Our Clamp Catalog
         </Link>
         <IoDocumentTextOutline />
