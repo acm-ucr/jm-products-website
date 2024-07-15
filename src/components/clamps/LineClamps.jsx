@@ -37,7 +37,10 @@ const LineClamps = () => {
         float={"right"}
       />
       <div className="text-jm-blue-200 underline flex flex-row gap-3">
-        <Link href="http://www.jmproducts.com/JMPdocs/JMPcatalogue2001.pdf">
+        <Link
+          href="http://www.jmproducts.com/JMPdocs/JMPcatalogue2001.pdf"
+          target="_blank"
+        >
           View Our Clamp Catalog
         </Link>
         <IoDocumentTextOutline />
