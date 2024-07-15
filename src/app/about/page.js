@@ -4,7 +4,7 @@ import Header from "@/components/about/Header";
 
 const page = () => {
   return (
-    <div className="w-full flex flex-col justify-center  gap-10">
+    <div className="w-full flex flex-col justify-center gap-10">
       <WhyJM />
       <Information />
       <Header />

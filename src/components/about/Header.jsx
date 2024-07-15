@@ -11,5 +11,4 @@ const Header = ({ title }) => {
     </div>
   );
 };
-r;
 export default Header;
