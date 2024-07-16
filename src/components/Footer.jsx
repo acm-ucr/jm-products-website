@@ -12,7 +12,7 @@ const Footer = () => {
           <Image alt="logo" src={logo} className="object-contain" />
         </div>
       </div>
-      <div className="">
+      <div>
         <p>J&M Products Inc., 1647 Truman Street,</p>
         <p>San Fernando, CA 91340</p>
       </div>
