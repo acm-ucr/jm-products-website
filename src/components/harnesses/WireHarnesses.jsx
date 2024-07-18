@@ -1,10 +1,10 @@
 import React from "react";
-import { data } from "@/data/HarnessAssembly.js";
+import { data } from "@/data/WireHarness.js";
 import Description from "../Description";
 
 const WireHarnesses = () => {
   return (
-    <div className="mx-40 flex items-center flex-col gap-10 px-3">
+    <div className="flex items-center flex-col gap-10 px-3">
       {data &&
         data.map((item, index) => (
           <Description
