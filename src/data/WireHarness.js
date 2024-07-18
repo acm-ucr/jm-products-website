@@ -23,5 +23,3 @@ export const data = [
     float: "right",
   },
 ];
-
-// Add the rest of the bullet points here. Delete this comment once you push
