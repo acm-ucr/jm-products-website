@@ -28,7 +28,15 @@ const AboutJM = () => {
           is AS9100 / ISO9001 and NADCAP certified.
         </p>
         <div className="flex justify-end">
-          <Button text="Learn More" link="/about" />
+          <Button
+            text="Learn More"
+            link="/about"
+            bgColor={"bg-white"}
+            borderColor={"border-jm-blue-200"}
+            textColor={"text-jm-blue-200"}
+            hoverBg={"group hover:bg-jm-blue-200"}
+            hoverText={"group-hover:text-white"}
+          />
         </div>
       </div>
     </div>

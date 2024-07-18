@@ -34,7 +34,15 @@ const ServiceDescription = ({ img, title, desc, link, float }) => {
           <div
             className={`flex ${float === "right" ? "flex justify-end" : ""}`}
           >
-            <Button text="Learn More" link={link} className="bg-jm-blue-200" />
+            <Button
+              text="Learn More"
+              link={link}
+              bgColor={"bg-jm-blue-200"}
+              borderColor={"border-white"}
+              textColor={"text-white"}
+              hoverBg={"group hover:bg-white"}
+              hoverText={"group-hover:text-jm-blue-200"}
+            />
           </div>
         </div>
       </div>
