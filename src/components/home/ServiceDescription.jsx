@@ -13,7 +13,7 @@ const ServiceDescription = ({ img, title, desc, link, float }) => {
         <Image
           src={img}
           alt="Service Description Picture"
-          className="w-1/4 px-5"
+          className={`w-1/4 pr-5 ${float === "right" ? "pl-5" : ""}`}
         />
         <div className="flex flex-col">
           <h2
@@ -25,8 +25,8 @@ const ServiceDescription = ({ img, title, desc, link, float }) => {
             {title}
           </h2>
           <p
-            className={`text-white text-left py-9 ${
-              float === "right" ? "text-right text-balance" : ""
+            className={`text-white text-left py-9 text-balance ${
+              float === "right" ? "text-right" : ""
             }`}
           >
             {desc}
