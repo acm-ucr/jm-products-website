@@ -17,5 +17,3 @@ export const data = [
   "Prototyping",
   "Short Run Production",
 ];
-
-// Add the rest of the bullet points here. Delete this comment once you push
