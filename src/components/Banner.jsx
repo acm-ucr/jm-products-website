@@ -10,7 +10,7 @@ const Banner = ({ text }) => {
       <Image src={bannerImg} alt="Banner Picture" className="w-full" />
       <div className="absolute inset-y-2/3 start-1/4">
         <h1 className="text-white text-lg md:text-4xl lg:text-5xl xl:text-6xl font-bold">
-          {text}
+          Line Support Clamps & Brackets
         </h1>
       </div>
       <div className="absolute start-0 end-0 inset-y-2/3 pr-4">
