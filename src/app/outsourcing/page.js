@@ -6,7 +6,7 @@ import Description from "@/components/Description";
 const page = () => {
   return (
     <div className="w-full flex flex-col justify-center items-center gap-10">
-      <Banner />
+      <Banner text="Outsourcing" />
       <CustomerConcerns />
       <Description />
     </div>
