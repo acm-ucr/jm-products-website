@@ -8,7 +8,7 @@ const HarnessAssembly = () => {
         <b>J&M Products Harness Assembly Overview </b>
       </h1>
       <div className="flex justify-center">
-        <ul className=" text-left text-sm list-disc flex flex-col font-hk w-5/12 tracking-wider">
+        <ul className="text-left text-sm list-disc flex flex-col font-hk w-5/12 tracking-wider">
           {data.map((item, index) => (
             <li key={index}> {item}</li>
           ))}
