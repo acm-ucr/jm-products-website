@@ -28,7 +28,10 @@ const Footer = () => {
               className="flex flex-row gap-2 justify-end items-center"
             >
               {index === 0 ? (
-                <Link className="hover:underline" href={item.contact}>
+                <Link
+                  className="hover:underline"
+                  href="mailto:sales@jmproducts.com"
+                >
                   {item.contact}
                 </Link>
               ) : (
