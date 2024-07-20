@@ -19,7 +19,7 @@ const AboutJM = () => {
             ABOUT J&M
           </p>
         </div>
-        <p className="my-7 mx-16 font-hk text-xl font-normal">
+        <p className="my-7 mx-16 font-hk text-xl font-normal ">
           Since 1963, J&M Products has been a leading manufacturer of line
           support clamps, brackets and electrical wire harness assemblies.
           Recognized through multiple awards for high quality and on-time
@@ -28,7 +28,15 @@ const AboutJM = () => {
           is AS9100 / ISO9001 and NADCAP certified.
         </p>
         <div className="flex justify-end">
-          <Button text="Learn More" link="/about" />
+          <Button
+            text="Learn More"
+            link="/about"
+            bgColor={"bg-white"}
+            borderColor={"border-jm-blue-200"}
+            textColor={"text-jm-blue-200"}
+            hoverBg={"group hover:bg-jm-blue-200"}
+            hoverText={"group-hover:text-white"}
+          />
         </div>
       </div>
     </div>

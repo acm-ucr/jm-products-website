@@ -7,14 +7,12 @@ import Footer from "@/components/Footer";
 
 const hk = Noto_Sans_HK({
   subsets: ["latin"],
-  display: "swap",
-  variable: "--font-sans-hk",
+  variable: "--font-hk",
 });
 
 const javanese = Noto_Sans_Javanese({
   subsets: ["latin"],
-  display: "swap",
-  variable: "--font-sans-javanese",
+  variable: "--font-javanese",
 });
 
 export const metadata = {

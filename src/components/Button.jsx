@@ -1,13 +1,23 @@
 import React from "react";
 import Link from "next/link";
 
-const Button = ({ text, link }) => {
+const Button = ({
+  text,
+  link,
+  bgColor,
+  borderColor,
+  textColor,
+  hoverBg,
+  hoverText,
+}) => {
   return (
     <Link
       href={link}
-      className="bg-white border-jm-blue-200 border-2 rounded-lg px-7 py-2.5"
+      className={`${bgColor} ${borderColor} border-2 rounded-lg px-7 py-2.5 ${hoverBg}`}
     >
-      <p className="text-jm-blue-200 font-bold text-base tracking-widest text-center">
+      <p
+        className={`${textColor} font-hk font-bold text-base tracking-widest text-center ${hoverText}`}
+      >
         {text}
       </p>
     </Link>
