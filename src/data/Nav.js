@@ -5,7 +5,7 @@ export const items = [
   },
   {
     name: "HOME",
-    link: "/",
+    link: "about",
   },
   {
     name: "LINE CLAMPS",
