@@ -15,32 +15,28 @@ const Navigation = () => {
     <Navbar
       collapseOnSelect
       fixed="top"
-      expand="md"
-      className="w-full shadow-sm color-white justify-between"
+      expand="lg"
+      className="w-full min-h-[15vh] shadow-sm color-white flex justify-between items-center "
     >
-      <Navbar.Brand>
+      <Navbar.Brand className="p-0">
         <Link
           eventkey="1"
           className="p-0 flex items-center"
           href="/"
           onClick={() => setSelected("")}
         >
-          <Image
-            src={Logo}
-            alt="JM-Logo"
-            className="w-1/3 md:w-1/4 lg:w-1/6 xl:w-1/12 p-3"
-          />
+          <Image src={Logo} alt="JM-Logo" className="w-full min-h-[5vh] m-3 " />
         </Link>
       </Navbar.Brand>
 
-      <Nav className="w-full flex gap-12 justify-end pr-3 no-underline">
+      <Nav className="w-full no-underline font-normal my-2 flex items-center text-center text-md justify-end pr-5 gap-12">
         {items.map((item, index) => (
           <Nav.Link
             as={Link}
             key={index}
             href={item.link}
             onClick={() => setSelected(item.name)}
-            className={`text-black tracking-widest font-javanese font-medium hover:text-gray-600 hover:cursor-pointer ${
+            className={`text-black tracking-widest font-javanese font-light hover:text-gray-600 hover:cursor-pointer ${
               selected === item.name ? "underline" : "no-underline"
             }`}
           >
