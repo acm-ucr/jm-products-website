@@ -1,14 +1,20 @@
-import WireHarnesses from "@/components/harnesses/WireHarnesses";
 import React from "react";
-
-import HarnessAssembly from "@/components/harnesses/HarnessAssembly";
 import Banner from "@/components/Banner";
+import Descriptions from "@/components/Descriptions";
+import BulletPoints from "@/components/BulletPoints";
+import { wireHarnessData } from "@/data/WireHarness.js";
+import { harnessAssemblyData } from "@/data/HarnessAssembly.js";
+
 const page = () => {
   return (
     <div className="w-full flex flex-col justify-center items-center gap-10">
       <Banner />
-      <WireHarnesses />
-      <HarnessAssembly />
+      <Descriptions data={wireHarnessData} />
+      <BulletPoints
+        title="J&M Products Harness Assembly Overview"
+        headerSize={"text-3xl"}
+        data={harnessAssemblyData}
+      />
     </div>
   );
 };

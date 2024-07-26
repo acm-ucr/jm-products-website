@@ -1,8 +1,8 @@
 import React from "react";
 import logo from "@/public/svg/J&MLogo.svg";
 import Image from "next/image";
-import { FaInstagram, FaLinkedin } from "react-icons/fa";
-import { AiFillFacebook } from "react-icons/ai";
+import { data } from "../data/Footer";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -21,14 +21,32 @@ const Footer = () => {
         <p>All Rights Reserved.</p>
       </div>
       <div className="flex flex-col items-end">
-        <div>
-          sales@jmproducts.com <FaInstagram className=" inline" />
-        </div>
-        <div>
-          +1-800-624-2198 <FaLinkedin className=" inline" />
-        </div>
-        <div>
-          +1-818-837-0205 <AiFillFacebook className=" inline" />
+        <div className="flex flex-col justify-end gap-1">
+          {data.map((item, index) => (
+            <div
+              key={index}
+              className="flex flex-row gap-2 justify-end items-center"
+            >
+              {index === 0 ? (
+                <Link
+                  className="hover:underline"
+                  href="mailto:sales@jmproducts.com"
+                >
+                  {item.contact}
+                </Link>
+              ) : (
+                <p>{item.contact}</p>
+              )}
+              <Link
+                key={index}
+                href={item.link}
+                target="_blank"
+                className="hover:-translate-y-0.5"
+              >
+                {item.icon}
+              </Link>
+            </div>
+          ))}
         </div>
       </div>
     </div>

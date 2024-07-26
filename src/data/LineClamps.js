@@ -3,7 +3,7 @@ import LineClamp2 from "@/public/images/lineclamps/LineClamp2.webp";
 import LineClamp3 from "@/public/images/lineclamps/LineClamp3.webp";
 import LineClamp4 from "@/public/images/lineclamps/LineClamp4.webp";
 
-export const Clamps = [
+export const lineClampsData = [
   {
     text: "J&M Products Line Support Clamps and Brackets are selected by major aerospace, transportation and industrial equipment manufacturers for use in widely varying applications including exposure to hydraulic, fuel, pneumatic and electrical systems.",
     img: LineClamp1,
