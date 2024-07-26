@@ -1,10 +1,9 @@
 import React from "react";
-import { data } from "@/data/WireHarness.js";
-import Description from "../Description";
+import Description from "./Description";
 
-const WireHarnesses = () => {
+const Descriptions = ({ data }) => {
   return (
-    <div className="flex items-center flex-col gap-10 px-3">
+    <div className="flex items-center flex-col gap-10 w-2/3">
       {data &&
         data.map((item, index) => (
           <Description
@@ -18,4 +17,4 @@ const WireHarnesses = () => {
   );
 };
 
-export default WireHarnesses;
+export default Descriptions;
