@@ -1,10 +1,10 @@
 import React from "react";
 
-const Header = ({ title, size = "text-5xl" }) => {
+const Header = ({ title }) => {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col w-full">
       <p
-        className={`font-hk bg-gradient-to-r from-jm-blue-300 to-jm-blue-100 bg-clip-text text-transparent ${size} tracking-widest font-bold`}
+        className={`font-hk bg-gradient-to-r from-jm-blue-300 to-jm-blue-100 bg-clip-text text-transparent text-2xl md:text-5xl tracking-widest font-bold`}
       >
         {title}
       </p>
@@ -12,4 +12,5 @@ const Header = ({ title, size = "text-5xl" }) => {
     </div>
   );
 };
+
 export default Header;
