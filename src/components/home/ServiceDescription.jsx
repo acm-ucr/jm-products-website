@@ -55,7 +55,6 @@ const ServiceDescription = ({ img, title, desc, extendedDesc, float }) => {
         >
           <Button
             text={isExtended ? "Show Less" : "Learn More"}
-            link=""
             bgColor={"bg-jm-blue-200"}
             borderColor={"border-white"}
             textColor={"text-white"}
