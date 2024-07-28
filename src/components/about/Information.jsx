@@ -4,7 +4,7 @@ import PDFLink from "../PDFLink.jsx";
 import { InformationData } from "@/data/Information.js";
 const Information = () => {
   return (
-    <div className="w-5/6 gap-10 flex flex-col justify-center p-10">
+    <div className="w-2/3 gap-10 flex flex-col justify-center p-10">
       <Header title="INFORMATIONS" size={"text-5xl"} />
       <div className="w-5/6 flex flex-col justify-center items-center gap-2 pl-20 tracking-wider">
         {InformationData.map((item, index) => (
