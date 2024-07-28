@@ -6,7 +6,7 @@ export const InformationData = [
     title: "International Certifications",
     points: [
       {
-        text: "AS9100/ISO 9001 Certificate",
+        text: "AS9100/ISO 9001 certificate",
         url: "http://www.jmproducts.com/JMPdocs/as9100_certificate.pdf",
       },
       {
@@ -36,7 +36,6 @@ export const InformationData = [
       },
     ],
   },
-
   {
     title: "J&M Supplier Specifications",
     points: [

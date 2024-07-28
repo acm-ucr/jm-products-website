@@ -1,25 +1,23 @@
 import React from "react";
 import Header from "./Header.jsx";
-// import PDFLink from "../PDFLink.jsx";
+import PDFLink from "../PDFLink.jsx";
 import { InformationData } from "@/data/Information.js";
 const Information = () => {
   return (
-    <div className="w-2/3 gap-10 flex flex-col justify-center">
+    <div className="w-5/6 gap-10 flex flex-col justify-center p-10">
       <Header title="INFORMATIONS" size={"text-5xl"} />
-      <div className="w-5/6 flex flex-col justify-center items-center gap-2">
+      <div className="w-5/6 flex flex-col justify-center items-center gap-2 pl-20 tracking-wider">
         {InformationData.map((item, index) => (
-          <div key={index} className="">
-            <h3 className="text-bold flex flex-col text-left font-bold text-1xl font-hk">
-              {item.title}
-            </h3>
+          <div key={index} className="w-5/6 mb-3">
+            <h3 className="font-bold text-base font-hk">{item.title}</h3>
             {item.points && (
-              <ul className="list-disc flex flex-col">
+              <ul className="text-sm list-disc flex flex-col font-hk pl-12 tracking-wider gap-2.5">
                 {item.points.map((point, pointIndex) => (
                   <li key={pointIndex}>
                     {point.url ? (
-                      <a href={point.url}>{point.text}</a>
+                      <PDFLink text={point.text} link={point.url}></PDFLink>
                     ) : (
-                      <p className="">{point.text}</p>
+                      <p> {point.text}</p>
                     )}
                   </li>
                 ))}
@@ -27,29 +25,9 @@ const Information = () => {
             )}
           </div>
         ))}
-
-        {/* <div className= "flex justify-center items-center flex-col" >
-        {InformationData.map((item, index) => (
-
-        //   if (item.title) {
-        //     <div className= "text-black font-bold">
-        //     </div>
-        // }
-
-        <li key={index}> {item.title} {item.text} {item.link} </li> //just testing if something shows up on the page
-        
-        ))} */}
       </div>
     </div>
   );
 };
 
 export default Information;
-
-//   {/* {index === 0 ? (
-//         //     <PDFLink
-//         //     text={item.text}
-//         //     link={item.link}
-//         //   ) : () */
-
-// //     <p>Very Cool Very Swag I like it</p>*/}
