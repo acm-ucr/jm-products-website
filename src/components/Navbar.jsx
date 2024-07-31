@@ -7,6 +7,7 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Link from "next/link";
 import { items } from "@/data/Nav";
+import { FaBars } from "react-icons/fa";
 
 const Navigation = () => {
   const [selected, setSelected] = useState("");
@@ -29,21 +30,32 @@ const Navigation = () => {
         </Link>
       </Navbar.Brand>
 
-      <Nav className="w-full no-underline font-normal my-2 flex items-center text-center text-md justify-end pr-5 gap-12">
-        {items.map((item, index) => (
-          <Nav.Link
-            as={Link}
-            key={index}
-            href={item.link}
-            onClick={() => setSelected(item.name)}
-            className={`text-black tracking-widest font-javanese font-light hover:text-gray-600 hover:cursor-pointer ${
-              selected === item.name ? "underline" : "no-underline"
-            }`}
-          >
-            {item.name}
-          </Nav.Link>
-        ))}
-      </Nav>
+      <Navbar.Toggle
+        className="list-unstyled !text-transparent border-0"
+        aria-controls="basic-navbar-nav"
+      >
+        <FaBars className="text-black text-xl" />
+      </Navbar.Toggle>
+      <Navbar.Collapse
+        id="basic-navbar-nav"
+        className="items-center lg:justify-end justify-center flex"
+      >
+        <Nav className="w-full no-underline font-normal my-2 flex items-center text-center text-md justify-end pr-5 gap-12">
+          {items.map((item, index) => (
+            <Nav.Link
+              as={Link}
+              key={index}
+              href={item.link}
+              onClick={() => setSelected(item.name)}
+              className={`text-black tracking-widest font-javanese font-light hover:text-gray-600 hover:cursor-pointer ${
+                selected === item.name ? "underline" : "no-underline"
+              }`}
+            >
+              {item.name}
+            </Nav.Link>
+          ))}
+        </Nav>
+      </Navbar.Collapse>
     </Navbar>
   );
 };
