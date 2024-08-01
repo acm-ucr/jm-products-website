@@ -40,14 +40,14 @@ const Navigation = () => {
         id="basic-navbar-nav"
         className="items-center lg:justify-end justify-center flex"
       >
-        <Nav className="w-full no-underline font-normal my-2 flex items-center text-center text-sm lg:text-md justify-end pr-5 gap-10">
+        <Nav className="w-full no-underline font-normal flex items-center text-center text-sm lg:text-md justify-end pr-5 gap-10">
           {items.map((item, index) => (
             <Nav.Link
               as={Link}
               key={index}
               href={item.link}
               onClick={() => setSelected(item.name)}
-              className={`text-black tracking-widest font-javanese font-light ${
+              className={`text-black tracking-widest font-javanese font-light hover:underline ${
                 selected === item.name ? "underline" : "no-underline"
               }`}
             >
