@@ -12,7 +12,6 @@ const page = () => {
       <Descriptions data={wireHarnessData} />
       <BulletPoints
         title="J&M Products Harness Assembly Overview"
-        headerSize={"text-3xl"}
         data={harnessAssemblyData}
       />
     </div>

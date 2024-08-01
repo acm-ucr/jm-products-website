@@ -8,15 +8,15 @@ const Banner = ({ text }) => {
   return (
     <div className="relative font-hk">
       <Image src={bannerImg} alt="Banner Picture" className="w-full" />
-      <div className="absolute inset-y-2/3 start-1/4">
-        <h1 className="text-white text-lg md:text-4xl lg:text-5xl xl:text-6xl font-bold">
+      <div className="absolute inset-y-1/2 md:inset-y-2/3 start-1/4 end-1/4">
+        <h1 className="text-white text-lg md:text-3xl lg:text-4xl xl:text-5xl font-bold">
           {text}
         </h1>
       </div>
       <div className="absolute start-0 end-0 inset-y-2/3 pr-4">
         <Image src={BannerDecor1} alt="Banner Decor 1" className="w-1/6" />
       </div>
-      <div className="absolute end-0 inset-y-2/3 w-1/5">
+      <div className="absolute w-1/6 -bottom-5 md:-bottom-10 lg:-bottom-20 right-0">
         <Image src={BannerDecor2} alt="Banner Decor 2" className="w-full" />
       </div>
     </div>
