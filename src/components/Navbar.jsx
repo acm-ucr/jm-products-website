@@ -15,7 +15,7 @@ const Navigation = () => {
   return (
     <Navbar
       collapseOnSelect
-      fixed="top"
+      sticky="top"
       expand="lg"
       className="w-full md:min-h-[7vh] lg:min-h-[9vh] bg-white shadow-sm color-white flex justify-between items-center"
     >

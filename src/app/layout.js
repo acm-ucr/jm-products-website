@@ -28,7 +28,7 @@ export default function RootLayout({ children }) {
         className={`${hk.variable} ${javanese.variable} flex flex-col justify-between min-h-screen`}
       >
         <Navbar />
-        <div className="w-full flex flex-col items-center justify-center pt-24">
+        <div className="w-full flex flex-col items-center justify-center">
           {children}
         </div>
         <Footer />
