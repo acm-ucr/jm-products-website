@@ -1,5 +1,6 @@
 /* eslint-disable new-cap */
 import "./globals.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 // eslint-disable-next-line camelcase
 import { Noto_Sans_HK, Noto_Sans_Javanese } from "next/font/google";
 import Navbar from "@/components/Navbar";
@@ -27,7 +28,7 @@ export default function RootLayout({ children }) {
         className={`${hk.variable} ${javanese.variable} flex flex-col justify-between min-h-screen`}
       >
         <Navbar />
-        <div className="w-full flex flex-col items-center justify-center ">
+        <div className="w-full flex flex-col items-center justify-center pt-24">
           {children}
         </div>
         <Footer />

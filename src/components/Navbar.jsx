@@ -17,7 +17,7 @@ const Navigation = () => {
       collapseOnSelect
       fixed="top"
       expand="lg"
-      className="w-full min-h-[15vh] shadow-sm color-white flex justify-between items-center "
+      className="w-full md:min-h-[7vh] lg:min-h-[9vh] bg-white shadow-sm color-white flex justify-between items-center"
     >
       <Navbar.Brand className="p-0">
         <Link
@@ -40,14 +40,14 @@ const Navigation = () => {
         id="basic-navbar-nav"
         className="items-center lg:justify-end justify-center flex"
       >
-        <Nav className="w-full no-underline font-normal my-2 flex items-center text-center text-md justify-end pr-5 gap-12">
+        <Nav className="w-full no-underline font-normal my-2 flex items-center text-center text-sm lg:text-md justify-end pr-5 gap-10">
           {items.map((item, index) => (
             <Nav.Link
               as={Link}
               key={index}
               href={item.link}
               onClick={() => setSelected(item.name)}
-              className={`text-black tracking-widest font-javanese font-light hover:text-gray-600 hover:cursor-pointer ${
+              className={`text-black tracking-widest font-javanese font-light ${
                 selected === item.name ? "underline" : "no-underline"
               }`}
             >
