@@ -5,14 +5,16 @@ const Description = ({ text, img, float = "left" }) => {
   return (
     <div className="text-black w-full">
       <div
-        className={`flex justify-center items-center ${
-          float === "right" ? "flex-row-reverse justify-end" : ""
+        className={`flex flex-col sm:flex-row items-center ${
+          float === "right"
+            ? "sm:flex-row-reverse sm:justify-end"
+            : "sm:justify-start"
         }`}
       >
-        <Image src={img} alt="Placeholder" className="w-1/4" />
+        <Image src={img} alt="Placeholder" className="mb-4 sm:w-1/4 w-3/4" />
         <p
-          className={`font-hk text-sm font-normal ${
-            float === "right" ? "mr-12" : "ml-12"
+          className={`font-hk text-xs sm:text-base font-light tracking-wide ${
+            float === "right" ? "sm:mr-12" : "sm:ml-12"
           }`}
         >
           {text}
