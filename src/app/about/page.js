@@ -2,6 +2,7 @@ import WhoWeAre from "@/components/about/WhoWeAre";
 import React from "react";
 import WhyJM from "@/components/about/WhyJM";
 import Information from "@/components/about/Information";
+import HexLogo from "@/components/about/HexLogo";
 
 const page = () => {
   return (
@@ -9,6 +10,7 @@ const page = () => {
       <WhoWeAre />
       <WhyJM />
       <Information />
+      <HexLogo />
     </div>
   );
 };
