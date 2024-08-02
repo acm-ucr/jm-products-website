@@ -8,7 +8,7 @@ const page = () => {
   return (
     <div className="w-full flex flex-col justify-center items-center gap-10">
       <Banner text="Outsourcing" />
-      <BlueText />
+      <BlueText text="J&M Products recognizes the unique challenges customers face when outsourcing Wire Harness, Sub Assemblies and Box Builds." />
       <CustomerConcerns />
       <Description />
       <BlueText />
