@@ -11,6 +11,10 @@ const page = () => {
       <LineClamps />
       <PartNumberSeries />
       <LogoStrip />
+      <BulletPoints
+        title="Products / Major Part Number Series"
+        data={partNumberSeriesData}
+      />
     </div>
   );
 };

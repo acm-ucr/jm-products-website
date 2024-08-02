@@ -9,19 +9,35 @@ const Button = ({
   textColor,
   hoverBg,
   hoverText,
+  onClick,
 }) => {
-  return (
-    <Link
-      href={link}
-      className={`${bgColor} ${borderColor} border-2 rounded-lg px-7 py-2.5 ${hoverBg}`}
-    >
-      <p
-        className={`${textColor} font-hk font-bold text-base tracking-widest text-center ${hoverText}`}
+  if (link) {
+    return (
+      <Link
+        href={link}
+        className={`${bgColor} ${borderColor} border-2 rounded-lg px-7 py-2.5 ${hoverBg}`}
       >
-        {text}
-      </p>
-    </Link>
-  );
+        <p
+          className={`${textColor} font-hk font-bold text-base tracking-widest text-center ${hoverText}`}
+        >
+          {text}
+        </p>
+      </Link>
+    );
+  } else {
+    return (
+      <button
+        onClick={onClick}
+        className={`${bgColor} ${borderColor} border-2 rounded-lg px-7 py-2.5 ${hoverBg}`}
+      >
+        <p
+          className={`${textColor} font-hk font-bold text-base tracking-widest text-center ${hoverText}`}
+        >
+          {text}
+        </p>
+      </button>
+    );
+  }
 };
 
 export default Button;
