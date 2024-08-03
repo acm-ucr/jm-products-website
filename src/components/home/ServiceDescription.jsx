@@ -35,7 +35,7 @@ const ServiceDescription = ({ img, title, desc, extendedDesc, float }) => {
           {title}
         </h2>
         <div
-          className={`text-white text-left text-balance my-9 ${
+          className={`text-white text-left text-balance my-9 sm:text-lg text-sm ${
             float === "right" ? "text-right" : ""
           }`}
         >
