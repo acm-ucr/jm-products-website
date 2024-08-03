@@ -9,7 +9,7 @@ import WireHarnesses from "@/public/images/home/WireHarnesses.webp";
 const OurManufacturingServices = () => {
   return (
     <div className="w-full bg-jm-blue-200 flex justify-center items-center">
-      <div className="w-5/6 flex flex-col items-center justify-center gap-24 py-24">
+      <div className="w-5/6 flex flex-col items-center justify-center sm:gap-24 sm:py-24 gap-10 py-10">
         <div className="flex items-center justify-center">
           <div className="relative w-20 h-20 flex justify-center items-center top-0.5">
             <Image
