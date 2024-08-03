@@ -22,13 +22,13 @@ const ServiceDescription = ({ img, title, desc, extendedDesc, float }) => {
           float === "right" ? "flex justify-end sm:pl-5" : ""
         } `}
       >
-        <div className="sm:w-auto w-3/5">
+        <div className="sm:w-auto w-2/5">
           <Image src={img} alt="Service Description Picture" />
         </div>
       </div>
       <div className="flex flex-col sm:w-3/4 w-full">
         <h2
-          className={`text-white text-left text-3xl font-bold tracking-widest ${
+          className={`text-white text-left sm:text-3xl text-2xl font-bold tracking-widest ${
             float === "right" ? "text-right" : ""
           }`}
         >
@@ -53,7 +53,7 @@ const ServiceDescription = ({ img, title, desc, extendedDesc, float }) => {
             : desc}
         </div>
         <div
-          className={`flex mb-20 ${
+          className={`flex justify-start mb-20 ${
             float === "right" ? "flex justify-end" : ""
           }`}
         >
