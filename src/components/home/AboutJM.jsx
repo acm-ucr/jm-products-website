@@ -6,7 +6,7 @@ import Button from "@/components/Button";
 
 const AboutJM = () => {
   return (
-    <div className="flex">
+    <div className="md:inline-flex hidden">
       <Image
         src={decor}
         alt="Placeholder"
@@ -34,7 +34,7 @@ const AboutJM = () => {
             bgColor={"bg-white"}
             borderColor={"border-jm-blue-200"}
             textColor={"text-jm-blue-200"}
-            hoverBg={"group hover:bg-jm-blue-200"}
+            hoverBg={"group hover:!bg-jm-blue-200"}
             hoverText={"group-hover:text-white"}
           />
         </div>

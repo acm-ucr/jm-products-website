@@ -59,7 +59,7 @@ const ServiceDescription = ({ img, title, desc, extendedDesc, float }) => {
             borderColor={"border-white"}
             textColor={"text-white"}
             hoverBg={"group hover:bg-white"}
-            hoverText={"group-hover:text-jm-blue-200"}
+            hoverText={"group-hover:!text-jm-blue-200"}
             onClick={handleClick}
           />
         </div>
