@@ -20,28 +20,25 @@ const Footer = () => {
         <p>Copyright ©2003-2024, J&M Products, Inc.</p>
         <p>All Rights Reserved.</p>
       </div>
-      <div className="flex flex-col items-end">
+      <div className="flex flex-col items-end justify-center">
         <div className="flex flex-col justify-end gap-1">
           {data.map((item, index) => (
-            <div
-              key={index}
-              className="flex flex-row gap-2 justify-end items-center"
-            >
+            <div key={index} className="flex flex-row gap-2 justify-end">
               {index === 0 ? (
                 <Link
-                  className="hover:underline"
+                  className="hover:underline no-underline text-black m-0"
                   href="mailto:sales@jmproducts.com"
                 >
                   {item.contact}
                 </Link>
               ) : (
-                <p>{item.contact}</p>
+                <p className="m-0">{item.contact}</p>
               )}
               <Link
                 key={index}
                 href={item.link}
                 target="_blank"
-                className="hover:-translate-y-0.5"
+                className="hover:-translate-y-0.5 text-black"
               >
                 {item.icon}
               </Link>

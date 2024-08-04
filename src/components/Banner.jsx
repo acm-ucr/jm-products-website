@@ -6,12 +6,12 @@ import Image from "next/image";
 
 const Banner = ({ text }) => {
   return (
-    <div className="relative font-hk">
-      <Image src={bannerImg} alt="Banner Picture" className="w-full" />
-      <div className="absolute inset-y-1/2 md:inset-y-2/3 start-1/4 end-1/4">
-        <h1 className="text-white text-lg md:text-3xl lg:text-4xl xl:text-5xl font-bold">
+    <div className="relative font-hk w-full">
+      <Image src={bannerImg} alt="Banner Picture" className="w-full h-1/2" />
+      <div className="absolute inset-y-1/2 md:inset-y-2/3 text-center w-full">
+        <p className="text-white text-xl md:text-3xl lg:text-4xl xl:text-5xl font-bold">
           {text}
-        </h1>
+        </p>
       </div>
       <div className="absolute start-0 end-0 inset-y-2/3 pr-4">
         <Image src={BannerDecor1} alt="Banner Decor 1" className="w-1/6" />
