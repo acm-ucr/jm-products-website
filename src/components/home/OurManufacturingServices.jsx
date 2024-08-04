@@ -9,25 +9,23 @@ import WireHarnesses from "@/public/images/home/WireHarnesses.webp";
 const OurManufacturingServices = () => {
   return (
     <div className="w-full bg-jm-blue-200 flex justify-center items-center">
-      <div className="w-5/6">
-        <div className="flex items-center justify-center space-x-4">
-          <div className="relative w-12 h-12">
+      <div className="w-5/6 flex flex-col items-center justify-center sm:gap-24 sm:py-24 gap-10 py-10">
+        <div className="flex items-center justify-center">
+          <div className="relative w-20 h-20 flex justify-center items-center top-0.5">
             <Image
               src={GearIconBg}
               alt="Gear Icon Background"
               className="absolute"
             />
-            <Image
-              src={GearIcon}
-              alt="Gear Icon"
-              className="relative left-1/2 transform -translate-x-1/2 top-2.5 z-10"
-            />
+            <Image src={GearIcon} alt="Gear Icon" className="relative z-10" />
           </div>
-          <p className="text-white font-bold text-4xl py-32 tracking-widest">
-            Our Manufacturing Services
-          </p>
+          <div>
+            <p className="text-white font-bold sm:text-4xl text-xl text-center tracking-widest">
+              Our Manufacturing Services
+            </p>
+          </div>
         </div>
-        <div className="mb-20">
+        <div>
           <ServiceDescription
             img={ClampsAndBracket}
             title="Clamps and Bracket"

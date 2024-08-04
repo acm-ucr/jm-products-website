@@ -13,25 +13,29 @@ const ServiceDescription = ({ img, title, desc, extendedDesc, float }) => {
 
   return (
     <div
-      className={`flex flex-row ${float === "right" ? "flex-row-reverse" : ""}`}
+      className={`flex flex-col sm:flex-row ${
+        float === "right" ? "sm:flex-row-reverse" : ""
+      }`}
     >
       <div
-        className={`w-1/4 pr-5 ${
-          float === "right" ? "pl-5" : ""
-        } flex-shrink-0`}
+        className={`sm:w-1/4 w-full sm:pr-5 ${
+          float === "right" ? "flex justify-end sm:pl-5" : ""
+        } `}
       >
-        <Image src={img} alt="Service Description Picture" />
+        <div className="sm:w-auto w-2/5">
+          <Image src={img} alt="Service Description Picture" />
+        </div>
       </div>
-      <div className="flex flex-col w-3/4">
+      <div className="flex flex-col sm:w-3/4 w-full">
         <h2
-          className={`text-white text-left text-3xl font-bold tracking-widest ${
+          className={`text-white text-left sm:text-3xl text-2xl font-bold tracking-widest ${
             float === "right" ? "text-right" : ""
           }`}
         >
           {title}
         </h2>
         <div
-          className={`text-white text-left text-balance my-9 ${
+          className={`text-white text-left text-balance my-9 sm:text-lg text-sm ${
             float === "right" ? "text-right" : ""
           }`}
         >
@@ -49,7 +53,7 @@ const ServiceDescription = ({ img, title, desc, extendedDesc, float }) => {
             : desc}
         </div>
         <div
-          className={`flex mb-20 ${
+          className={`flex justify-start mb-20 ${
             float === "right" ? "flex justify-end" : ""
           }`}
         >
