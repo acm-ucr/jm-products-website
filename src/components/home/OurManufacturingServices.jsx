@@ -11,7 +11,7 @@ const OurManufacturingServices = () => {
     <div className="w-full bg-jm-blue-200 flex justify-center items-center">
       <div className="w-5/6 flex flex-col items-center justify-center sm:gap-24 sm:py-24 gap-10 py-10">
         <div className="flex items-center justify-center">
-          <div className="relative w-20 h-20 flex justify-center items-center bottom-1">
+          <div className="relative w-20 h-20 flex justify-center items-center sm:bottom-1 bottom-3">
             <Image
               src={GearIconBg}
               alt="Gear Icon Background"
