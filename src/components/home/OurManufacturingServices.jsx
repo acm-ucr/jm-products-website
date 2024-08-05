@@ -11,7 +11,7 @@ const OurManufacturingServices = () => {
     <div className="w-full bg-jm-blue-200 flex justify-center items-center">
       <div className="w-5/6 flex flex-col items-center justify-center sm:gap-24 sm:py-24 gap-10 py-10">
         <div className="flex items-center justify-center">
-          <div className="relative w-20 h-20 flex justify-center items-center top-0.5">
+          <div className="relative w-20 h-20 flex justify-center items-center bottom-1">
             <Image
               src={GearIconBg}
               alt="Gear Icon Background"
@@ -20,7 +20,7 @@ const OurManufacturingServices = () => {
             <Image src={GearIcon} alt="Gear Icon" className="relative z-10" />
           </div>
           <div>
-            <p className="text-white font-bold sm:text-4xl text-xl text-center tracking-widest">
+            <p className="text-white font-bold sm:text-4xl text-xl text-center tracking-widest h-20 flex justify-center items-center">
               Our Manufacturing Services
             </p>
           </div>
