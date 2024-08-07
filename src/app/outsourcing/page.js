@@ -3,8 +3,8 @@ import Banner from "@/components/Banner";
 import CustomerConcerns from "@/components/outsourcing/CustomerConcerns";
 import Description from "@/components/Description";
 import BlueText from "@/components/outsourcing/BlueText";
-import ElectricalAssembly1 from "@/public/images/outsourcing/ElectricalAssembly1.png";
-import ElectricalAssembly2 from "@/public/images/outsourcing/ElectricalAssembly2.png";
+import ElectricalAssembly1 from "@/public/images/outsourcing/ElectricalAssembly1.webp";
+import ElectricalAssembly2 from "@/public/images/outsourcing/ElectricalAssembly2.webp";
 
 const page = () => {
   return (
