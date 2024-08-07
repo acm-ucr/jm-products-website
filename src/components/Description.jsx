@@ -13,7 +13,7 @@ const Description = ({ text, img, float = "left" }) => {
       >
         <Image src={img} alt="Placeholder" className="mb-4 sm:w-1/4 w-3/4" />
         <p
-          className={`font-hk text-xs sm:text-base font-light tracking-wide ${
+          className={`font-hk text-xs sm:text-base font-light tracking-wide sm:w-3/4 ${
             float === "right" ? "sm:mr-12" : "sm:ml-12"
           }`}
         >
