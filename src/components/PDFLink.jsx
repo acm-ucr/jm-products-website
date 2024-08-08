@@ -8,7 +8,7 @@ const PDFLink = ({ text, link }) => {
       <Link href={link} target="_blank">
         {text}
       </Link>
-      <IoDocumentTextOutline />
+      <IoDocumentTextOutline className="flex-shrink-0 " />
     </div>
   );
 };
