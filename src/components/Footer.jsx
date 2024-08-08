@@ -6,17 +6,17 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <div className="w-full grid grid-cols-3 grid-rows-2 py-5 px-10 gap-2 font-javanese text-sm leading-5">
-      <div className="grid grid-cols-subgrid gap-4 col-span-3">
-        <div className="flex justify-center col-start-2 h-11">
+    <div className="w-full grid grid-cols-1 grid-rows-1 md:grid-cols-3 md:grid-rows-2 py-5 px-10 gap-2 font-javanese text-sm leading-5">
+      <div className="grid md:grid-cols-subgrid gap-4 md:col-span-3">
+        <div className="flex justify-center md:col-start-2 md:h-11">
           <Image alt="logo" src={logo} className="object-contain" />
         </div>
       </div>
-      <div>
+      <div className="flex flex-col items-center pt-6 md:pt-0 leading-none md:leading-5">
         <p>J&M Products Inc., 1647 Truman Street,</p>
         <p>San Fernando, CA 91340</p>
       </div>
-      <div className="flex flex-col items-center">
+      <div className="md:flex flex-col items-center hidden">
         <p>Copyright ©2003-2024, J&M Products, Inc.</p>
         <p>All Rights Reserved.</p>
       </div>
