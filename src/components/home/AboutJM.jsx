@@ -6,7 +6,7 @@ import Button from "@/components/Button";
 
 const AboutJM = () => {
   return (
-    <div className="md:inline-flex hidden">
+    <div className="flex">
       <Image
         src={decor}
         alt="Placeholder"

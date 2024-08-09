@@ -74,7 +74,7 @@ const Landing = () => {
         alt="Right Cable"
         className="absolute top-[100px] md:top-[200px] 2xl:top-[510px] right-[15px] md:right-[30px] 2xl:right-[130px] w-[65px] md:w-[130px] 2xl:w-[195px]"
       />
-      <div className="flex flex-col items-center mt-[30%] md:mt-[20%] lg:mt-[15%] xl:mt-[10%] 2xl:mt-[5%] space-y-2 md:space-y-4 2xl:space-y-6">
+      <div className="flex flex-col items-center mt-[30%] md:mt-[20%] lg:mt-[15%] xl:mt-[5%]  space-y-2 md:space-y-4 2xl:space-y-6">
         <div className="flex flex-col items-center space-y-2 md:space-y-4 2xl:space-y-6">
           <Image src={Logo} alt="J&M Logo" className="w-full max-w-full" />
           <p className="font-normal font-hk md:text-2xl tracking-widest text-transparent bg-clip-text bg-gradient-to-r from-[#3A4F85] to-[#8EA7C7]">
