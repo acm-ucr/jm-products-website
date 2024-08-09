@@ -1,6 +1,6 @@
 import React from "react";
-import bannerImgDesktop from "@/public/images/Banner.webp";
-import bannerImgMobile from "@/public/images/BannerMobile.webp";
+import BannerImgDesktop from "@/public/images/Banner.webp";
+import BannerImgMobile from "@/public/images/BannerMobile.webp";
 import BannerDecor1 from "@/public/svg/BannerDecor1.svg";
 import BannerDecor2 from "@/public/svg/BannerDecor2.svg";
 import Image from "next/image";
@@ -10,13 +10,13 @@ const Banner = ({ text }) => {
     <div className="relative font-hk w-full">
       <div className="hidden sm:block">
         <Image
-          src={bannerImgDesktop}
+          src={BannerImgDesktop}
           alt="Banner Picture"
           className="w-full h-1/2"
         />
       </div>
       <div className="block sm:hidden">
-        <Image src={bannerImgMobile} alt="Banner Picture" className="w-full" />
+        <Image src={BannerImgMobile} alt="Banner Picture" className="w-full" />
       </div>
       <div className="absolute inset-y-1/2 md:inset-y-2/3 text-center w-full">
         <p className="text-white text-xl md:text-3xl lg:text-4xl xl:text-5xl font-bold tracking-wider">
