@@ -27,4 +27,8 @@ export const items = [
     name: "RFQ",
     link: "rfq",
   },
+  {
+    name: "ABOUT",
+    link: "about",
+  },
 ];
