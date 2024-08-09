@@ -8,6 +8,10 @@ export const items = [
     link: "about",
   },
   {
+    name: "ABOUT",
+    link: "about",
+  },
+  {
     name: "LINE CLAMPS",
     link: "line-clamps",
   },
