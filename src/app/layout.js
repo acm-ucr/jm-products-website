@@ -18,7 +18,8 @@ const javanese = Noto_Sans_Javanese({
 
 export const metadata = {
   title: "JM Products",
-  description: "JM Products Official Website",
+  description:
+    "JM Products, The industry leader in Line Support Clamps & Wire Harnesses",
 };
 
 export default function RootLayout({ children }) {
