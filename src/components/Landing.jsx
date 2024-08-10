@@ -91,8 +91,8 @@ const Landing = () => {
             bgColor={"bg-white"}
             borderColor={"border-jm-blue-200"}
             textColor={"text-jm-blue-200"}
-            hoverBg={"group hover:bg-jm-blue-200"}
-            hoverText={"group-hover:text-white"}
+            hoverBg={"group hover:!bg-jm-blue-200"}
+            hoverText={"group-hover:!text-white"}
           />
           <Button
             text="Contact Us"
@@ -100,8 +100,8 @@ const Landing = () => {
             bgColor={"bg-jm-blue-200"}
             borderColor={"border-jm-blue-200"}
             textColor={"text-white"}
-            hoverBg={"group hover:bg-white"}
-            hoverText={"group-hover:text-jm-blue-200"}
+            hoverBg={"group hover:!bg-white"}
+            hoverText={"group-hover:!text-jm-blue-200"}
           />
         </div>
         <div className="flex 2xl:space-x-6">
