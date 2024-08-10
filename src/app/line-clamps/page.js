@@ -10,7 +10,6 @@ const page = () => {
       <LineClamps />
       <BulletPoints
         title="Products / Major Part Number Series"
-        headerSize={"text-3xl"}
         data={partNumberSeriesData}
       />
     </div>

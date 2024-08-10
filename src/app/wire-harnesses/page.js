@@ -8,11 +8,10 @@ import { harnessAssemblyData } from "@/data/HarnessAssembly.js";
 const page = () => {
   return (
     <div className="w-full flex flex-col justify-center items-center gap-10">
-      <Banner />
+      <Banner text="Wire Harness Manufacturing" />
       <Descriptions data={wireHarnessData} />
       <BulletPoints
         title="J&M Products Harness Assembly Overview"
-        headerSize={"text-3xl"}
         data={harnessAssemblyData}
       />
     </div>

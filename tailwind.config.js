@@ -20,6 +20,17 @@ module.exports = {
           "blue-300": "#3A4F85",
         },
       },
+      keyframes: {
+        shake: {
+          "0%, 100%": { transform: "rotate(0deg)" },
+          "25%": { transform: "rotate(-5deg)" },
+          "50%": { transform: "rotate(5deg)" },
+          "75%": { transform: "rotate(-5deg)" },
+        },
+      },
+      animation: {
+        shake: "shake 0.5s ease-in-out",
+      },
     },
   },
   plugins: [],
