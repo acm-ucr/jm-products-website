@@ -5,10 +5,11 @@ import JMbrochures from "/public/images/about/JMbrochures.webp";
 
 const WhoWeAre = () => {
   return (
-    <div className="w-3/4 flex flex-col gap-10 mx-auto py-8">
+    <div className="w-2/3 flex flex-col gap-10 mx-auto py-8">
       <Header title="WHO WE ARE" size="text-4xl" />
-      <section className="text-left">
-        <p className="text-justify font-medium mb-6 leading-relaxed text-sm/loose">
+
+      <div className="flex flex-col justify-end w-11/12 space-y-10">
+        <p className="flex justify-end font-hk mb-6 leading-relaxed text-base">
           J&M Products is dedicated to the turnkey manufacturing and marketing
           of high quality products and services. <br />
           Through leadership, innovation and continuous improvement we are able
@@ -19,21 +20,21 @@ const WhoWeAre = () => {
           defect-free product on-time at the most <br />
           competitive price possible.
         </p>
-        <div className="text-justify mb-6">
-          <p className="font-hk bg-gradient-to-r from-jm-blue-300 to-jm-blue-100 bg-clip-text text-transparent text-2xl tracking-widest font-bold text-center">
-            Brochures
-          </p>
-        </div>
-        <div className="flex justify-centerr">
+
+        <p className="flex justify-center font-hk bg-gradient-to-r from-jm-blue-300 to-jm-blue-100 bg-clip-text text-transparent text-4xl tracking-widest font-bold text-center">
+          Brochures
+        </p>
+
+        <div className="flex justify-end w-full">
           <Image
             src={JMbrochures}
             alt="Brochures"
             width={800}
             height={600}
-            className="w-full max-w-3xl center"
+            className=" w-full max-w-fit center"
           />
         </div>
-      </section>
+      </div>
     </div>
   );
 };
