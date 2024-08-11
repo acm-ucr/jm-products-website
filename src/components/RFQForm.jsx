@@ -1,8 +1,9 @@
 import React from "react";
+import FormButton from "@/components/FormButton";
 
 const Form = () => {
   return (
-    <form className="w-1/2 flex flex-col justify-center items-start gap-3 font-hk">
+    <form className="w-5/6 md:w-1/2 flex flex-col justify-center items-center gap-3 font-hk">
       <div className="flex flex-col w-full">
         <label htmlFor="name" className="block mb-2 text-2xl">
           Name*
@@ -71,8 +72,21 @@ const Form = () => {
         <hr className="w-full m-0 p-0" />
       </div>
       <div className="flex flex-col w-full">
+        <label htmlFor="company" className="block mb-2 text-2xl">
+          Company Name
+        </label>
+        <input
+          type="text"
+          id="company"
+          name="company"
+          placeholder="Company Name"
+          className="w-full p-2 border-0 focus:outline-none"
+        />
+        <hr className="w-full m-0 p-0" />
+      </div>
+      <div className="flex flex-col w-full">
         <label htmlFor="address" className="block mb-2 text-2xl">
-          Address
+          Address:
         </label>
         <input
           type="text"
@@ -81,7 +95,6 @@ const Form = () => {
           placeholder="Your address"
           className="w-full p-2  border-1 "
         />
-        {/* <hr className='w-full m-0 p-0'/> */}
       </div>
       <div className="flex flex-col w-full">
         <label htmlFor="state" className="block mb-2 text-2xl">
@@ -124,7 +137,7 @@ const Form = () => {
       </div>
       <div className="flex flex-col w-full">
         <label htmlFor="address" className="block mb-2 text-2xl">
-          General Description of Request
+          General Description of Request:
         </label>
         <input
           type="text"
@@ -133,7 +146,6 @@ const Form = () => {
           placeholder="Request"
           className="w-full p-2  border-1 "
         />
-        {/* <hr className='w-full m-0 p-0'/> */}
       </div>
       <div className="flex flex-col w-full">
         <label htmlFor="part-numbers" className="block mb-2 text-2xl">
@@ -187,10 +199,6 @@ const Form = () => {
         />
         <hr className="w-full m-0 p-0" />
       </div>
-      {/* <div className='flex flex-col w-full items-start'>
-        <label htmlFor="long-term-delivery" className='block mb-2 text-2xl'>Perfered Method of Contact<br/><p className='text-sm ml-1'>Please check all that apply:</p></label>
-        <input type="checkbox" id="long-term-delivery" name="long-term-delivery" placeholder="Potential Long Term Delivery" className='p-2'  />
-      </div> */}
       <div className="flex flex-col w-full">
         <label className="block mb-1 text-2xl">
           Preferred forms of Contact
@@ -267,17 +275,17 @@ const Form = () => {
       <div className="flex flex-col w-full">
         <label htmlFor="address" className="block mb-2 text-2xl">
           Please add any additional comments or requests that would help us to
-          serve you better
+          serve you better:
         </label>
         <input
           type="text"
           id="notes"
           name="notes"
           placeholder="Notes"
-          className="w-full p-2 border-1 "
+          className="w-full p-2 border-1"
         />
-        {/* <hr className='w-full m-0 p-0'/> */}
       </div>
+      <FormButton />
     </form>
   );
 };
