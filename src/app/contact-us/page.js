@@ -1,17 +1,12 @@
 import React from "react";
-import FormButton from "@/components/FormButton";
+import Form from "@/components/contact-us/ContactForm";
+import Info from "@/components/contact-us/Info";
 
 const page = () => {
   return (
-    <div>
-      <FormButton
-        text="SEND MESSAGE"
-        bgColor={"bg-jm-blue-200"}
-        borderColor={"border-jm-blue-200"}
-        textColor={"text-white"}
-        hoverBg={"group hover:!bg-white"}
-        hoverText={"group-hover:!text-jm-blue-200"}
-      />
+    <div className="w-full flex flex-col md:flex-row justify-evenly items-center">
+      <Form />
+      <Info />
     </div>
   );
 };

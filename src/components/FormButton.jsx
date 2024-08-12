@@ -1,21 +1,14 @@
 import React from "react";
 
-const FormButton = ({
-  text,
-  bgColor,
-  borderColor,
-  textColor,
-  hoverBg,
-  hoverText,
-}) => {
+const FormButton = () => {
   return (
     <button
-      className={`${bgColor} ${borderColor} border-2 rounded-md px-2.5 py-1 ${hoverBg}`}
+      className={`bg-jm-blue-200 border-jm-blue-200 border-2 rounded-md px-2.5 py-1 group hover:!bg-white`}
     >
       <p
-        className={`${textColor} font-hk font-bold text-base tracking-widest text-center m-0 ${hoverText}`}
+        className={`text-white font-hk font-bold text-base tracking-widest text-center m-0 group-hover:!text-jm-blue-200`}
       >
-        {text}
+        SEND MESSAGE
       </p>
     </button>
   );
