@@ -5,8 +5,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Noto_Sans_HK, Noto_Sans_Javanese } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import FormbricksProvider from "@/components/formbricks";
-import { Suspense } from "react";
+import { Toaster } from "react-hot-toast";
+// import FormbricksProvider from "@/components/formbricks";
+// import { Suspense } from "react";
 
 const hk = Noto_Sans_HK({
   subsets: ["latin"],
@@ -27,15 +28,16 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <Suspense fallback={<div>Loading...</div>}>
+      {/* <Suspense fallback={<div>Loading...</div>}>
         <FormbricksProvider />
-      </Suspense>
+      </Suspense> */}
 
       <body
         className={`${hk.variable} ${javanese.variable} flex flex-col justify-between min-h-screen`}
       >
         <Navbar />
         <div className="w-full flex flex-col items-center justify-center">
+          <Toaster />
           {children}
         </div>
         <Footer />
