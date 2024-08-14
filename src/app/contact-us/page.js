@@ -4,7 +4,7 @@ import Info from "@/components/contact-us/Info";
 
 const page = () => {
   return (
-    <div className="w-full flex flex-col md:flex-row justify-evenly items-center">
+    <div className="w-full h-full flex flex-col md:flex-row justify-evenly items-center sm:gap-0 gap-20">
       <Form />
       <Info />
     </div>

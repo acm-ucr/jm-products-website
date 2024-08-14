@@ -2,9 +2,11 @@ import React from "react";
 import Link from "next/link";
 import { IoDocumentTextOutline } from "react-icons/io5";
 
-const PDFLink = ({ text, link }) => {
+const PDFLink = ({ text, link, textColor, hoverColor }) => {
   return (
-    <div className="text-jm-blue-200 underline flex flex-row gap-2 lg:gap-3 hover:text-jm-blue-300 items-center">
+    <div
+      className={`${textColor} underline flex flex-row gap-2 lg:gap-3 ${hoverColor} items-center`}
+    >
       <Link href={link} target="_blank">
         {text}
       </Link>

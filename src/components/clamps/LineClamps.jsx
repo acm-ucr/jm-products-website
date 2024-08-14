@@ -9,6 +9,8 @@ const LineClamps = () => {
       <PDFLink
         text={"View Our Clamp Catalog"}
         link={"http://www.jmproducts.com/JMPdocs/JMPcatalogue2001.pdf"}
+        textColor={"text-jm-blue-200"}
+        hoverColor={"hover:!text-jm-blue-300"}
       />
     </div>
   );
