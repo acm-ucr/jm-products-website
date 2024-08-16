@@ -1,5 +1,6 @@
 import React from "react";
 import PDFLink from "@/components/PDFLink";
+import Link from "next/link";
 import { FaLocationDot } from "react-icons/fa6";
 import { IoMdMail } from "react-icons/io";
 import { FaPhone } from "react-icons/fa6";
@@ -37,9 +38,21 @@ const Info = () => {
         </div>
         <div className="ml-3 my-2">
           <p className="text-white text-sm tracking-widest">
-            <strong>General Information:</strong> <u>info@jmproducts.com</u>
+            <strong>General Information: </strong>
+            <Link
+              className="hover:underline no-underline"
+              href="mailto:info@jmproducts.com"
+            >
+              info@jmproducts.com
+            </Link>
             <br />
-            <strong>Sales:</strong> <u>sales@jmproducts.com</u>
+            <strong>Sales: </strong>
+            <Link
+              className="hover:underline no-underline"
+              href="mailto:sales@jmproducts.com"
+            >
+              sales@jmproducts.com
+            </Link>
           </p>
         </div>
         <div className="flex flex-row items-center gap-2">
