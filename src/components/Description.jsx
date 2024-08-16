@@ -22,7 +22,7 @@ const Description = ({
           className={`mb-4 sm:w-1/4 w-3/4 ${reverseOnMobile ? "mt-4" : ""}`}
         />
         <p
-          className={`font-hk text-sm sm:text-base font-normal sm:font-light tracking-wide sm:w-3/4 ${
+          className={`font-hk text-sm sm:text-base font-normal tracking-wide sm:w-3/4 ${
             float === "right" ? "sm:mr-12" : "sm:ml-12"
           } ${reverseOnMobile ? "mb-4" : ""}`}
         >
