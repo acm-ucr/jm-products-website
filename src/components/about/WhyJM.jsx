@@ -41,28 +41,28 @@ const WhyJM = () => {
           </div>
 
           <div className="flex flex-col md:flex-row items-center">
-            <div className="flex flex-row w-4/5 items-center justify-end">
+            <div className="flex flex-row w-full items-center justify-end">
               <div className="flex flex-row gap-2 justify-center w-full">
                 <Image src={JMaward1} alt="Award1" className="w-2/5" />
                 <Image src={JMaward2} alt="Award2" className="w-2/5" />
               </div>
             </div>
 
-            <div className="flex flex-col w-4/5 gap-2">
-              <p className="text-left">
+            <div className="flex flex-col w-full gap-2">
+              <p className="md:text-left text-center w-full">
                 Customer Satisfaction is our goal. For over 60 years J&M has
                 provided a superior level of product performance with courteous
                 and efficient customer service. We hope to develop and nurture a
                 long term relationship with each of our customers. We are not
                 satisfied until our customers are satisfied. Every time.
               </p>
-              <p className="text-left">
+              {/* <p className="text-left">
                 Customer Satisfaction is our goal. For over 60 years J&M has
                 provided a superior level of product performance with courteous
                 and efficient customer service. We hope to develop and nurture a
                 long term relationship with each of our customers. We are not
                 satisfied until our customers are satisfied. Every time.
-              </p>
+              </p> */}
             </div>
           </div>
 

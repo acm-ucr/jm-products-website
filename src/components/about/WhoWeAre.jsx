@@ -9,7 +9,7 @@ const WhoWeAre = () => {
       <Header title="WHO WE ARE" />
 
       <div className="flex flex-col space-y-10">
-        <p className="font-hk leading-relaxed text-base text-center md:text-left">
+        <p className="font-hk leading-relaxed text-base text-left">
           J&M Products is dedicated to the turnkey manufacturing and marketing
           of high quality products and services. Through leadership, innovation
           and continuous improvement we are able to achieve the highest level of
