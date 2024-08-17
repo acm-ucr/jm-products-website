@@ -12,7 +12,7 @@ const BulletPoints = ({ title, data }) => {
         <div className="border-t-4 border-solid border-jm-blue-200 w-full m-0" />
       </div>
       <div className="flex lg:justify-center ">
-        <ul className="text-left text-xs lg:text-sm list-disc flex flex-col font-hk w-full lg:w-7/12 sm:gap-1 tracking-wider">
+        <ul className="text-left text-xs lg:text-sm list-disc flex flex-col font-hk w-full lg:w-7/12 sm:gap-1 tracking-wider list-inside">
           {data.map((item, index) => (
             <li key={index}>{item}</li>
           ))}
