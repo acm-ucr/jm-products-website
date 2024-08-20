@@ -16,7 +16,7 @@ const NotFound = () => {
         <p className="w-1/2 text-xs sm:text-lg lg:text-2xl xl:text-3xl font-light mb-6">
           The page you are looking for does not exist!
         </p>
-        <div className="flex absolute justify-center w-full -bottom-4 sm:-bottom-6 md:-bottom-10 lg:-bottom-16 scale-50 sm:scale-75 md:scale-90 lg:scale-125 mt-1 ">
+        <div className="flex absolute justify-center w-full -bottom-4 sm:-bottom-6 md:-bottom-8 lg:-bottom-12 scale-50 sm:scale-75 md:scale-90 lg:scale-125 mt-1 ">
           <Button
             text="Back to home"
             link="/"
