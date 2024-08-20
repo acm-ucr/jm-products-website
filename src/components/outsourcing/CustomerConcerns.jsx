@@ -3,7 +3,7 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const CustomerConcernsAnimation = {
-  hidden: { opacity: 0, x: 450 },
+  hidden: { opacity: 0, x: 25 },
   show: {
     opacity: 1,
     y: 0,
@@ -12,7 +12,7 @@ const CustomerConcernsAnimation = {
 };
 
 const transition = {
-  duration: 0.7,
+  duration: 0.8,
 };
 
 const CustomerConcerns = () => {
@@ -23,6 +23,7 @@ const CustomerConcerns = () => {
       initial="hidden"
       whileInView="show"
       viewport={{ once: true, amount: 0.5 }}
+      className="w-3/4 xl:w-2/3"
     >
       <div className="w-3/4 xl:w-2/3 font-hk flex flex-col justify-center items-center gap-10">
         <h2 className="text-xl font-semibold w-full">
