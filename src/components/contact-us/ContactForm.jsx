@@ -39,7 +39,7 @@ const Form = () => {
           action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScjy5tMgxPdDUwz2i8nPiDRpg4gIXc0B-mlqOWeKNxps67xtw/formResponse"
           onSubmit={() => (window.submitted = true)}
           target="hidden_iframe"
-          className="w-5/6 md:w-1/4 flex flex-col justify-center items-center gap-3 font-hk"
+          className="w-5/6 md:w-2/5 flex flex-col justify-center items-center gap-3 font-hk"
         >
           <div className="flex flex-col w-full">
             <label htmlFor="name" className="block mb-2 text-2xl">

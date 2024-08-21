@@ -7,7 +7,7 @@ import { FaPhone } from "react-icons/fa6";
 
 const Info = () => {
   return (
-    <div className="bg-jm-blue-300 sm:w-2/5 w-full">
+    <div className="bg-jm-blue-300 sm:w-1/2 w-full">
       <div className="m-4">
         <p className="text-white text-4xl font-semibold tracking-widest border-b pt-4 pb-1">
           INFO
