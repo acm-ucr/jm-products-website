@@ -29,7 +29,7 @@ const fadeInFromTop = {
 
 const WhyJM = () => {
   return (
-    <div className="w-5/6 md:w-2/3 flex flex-col justify-center gap-6 md:gap-10">
+    <div className="w-5/6 md:w-2/3 flex flex-col justify-center gap-6 md:gap-10 font-hk">
       <motion.div
         variants={SlideInFromLeft}
         viewport={{ once: true, amount: 0 }}
@@ -100,13 +100,6 @@ const WhyJM = () => {
                   customers. We are not satisfied until our customers are
                   satisfied. Every time.
                 </p>
-                {/* <p className="text-left">
-                Customer Satisfaction is our goal. For over 60 years J&M has
-                provided a superior level of product performance with courteous
-                and efficient customer service. We hope to develop and nurture a
-                long term relationship with each of our customers. We are not
-                satisfied until our customers are satisfied. Every time.
-              </p> */}
               </div>
             </div>
 
