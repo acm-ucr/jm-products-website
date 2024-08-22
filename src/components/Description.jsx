@@ -1,5 +1,18 @@
+"use client";
 import React from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
+
+const descriptionAnimations = {
+  start: {
+    opacity: 0,
+    y: -30,
+  },
+  end: {
+    opacity: 1,
+    y: 0,
+  },
+};
 
 const Description = ({
   text,
@@ -8,7 +21,13 @@ const Description = ({
   reverseOnMobile = false,
 }) => {
   return (
-    <div className="text-black w-full">
+    <motion.div
+      className="text-black w-full"
+      variants={descriptionAnimations}
+      initial="start"
+      whileInView="end"
+      transition={{ duration: 0.2, delay: 0.3 }}
+    >
       <div
         className={`flex flex-col sm:flex-row items-center ${
           float === "right"
@@ -29,7 +48,7 @@ const Description = ({
           {text}
         </p>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

@@ -1,5 +1,7 @@
-const NotFound = () => {
-  return <div>404 Page Not Found</div>;
+import NotFound from "@/components/NotFound";
+
+const PageNotFound = () => {
+  return <NotFound />;
 };
 
-export default NotFound;
+export default PageNotFound;
