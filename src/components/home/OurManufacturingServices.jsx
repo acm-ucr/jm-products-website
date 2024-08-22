@@ -1,4 +1,12 @@
-import React from "react";
+"use client";
+
+import React, { useRef } from "react";
+import { motion, useInView } from "framer-motion";
+import {
+  fadeInFromTop,
+  fadeInFromBottom,
+  spinClockwise,
+} from "@/utils/animationVariations";
 import Image from "next/image";
 import GearIcon from "@/public/svg/GearIcon.svg";
 import GearIconBg from "@/public/svg/GearIconBackground.svg";
@@ -7,22 +15,54 @@ import ClampsAndBracket from "@/public/images/home/ClampsAndBracket.webp";
 import WireHarnesses from "@/public/images/home/WireHarnesses.webp";
 
 const OurManufacturingServices = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, {
+    triggerOnce: true,
+    threshold: 0.2,
+  });
+
   return (
     <div className="w-full bg-jm-blue-200 flex justify-center items-center">
       <div className="w-5/6 flex flex-col items-center justify-center sm:gap-24 sm:py-24 gap-10 py-10">
         <div className="flex items-center justify-center">
           <div className="relative w-20 h-20 flex justify-center items-center sm:top-1">
-            <Image
-              src={GearIconBg}
-              alt="Gear Icon Background"
+            <motion.div
+              ref={ref}
+              variants={fadeInFromTop}
+              initial="initial"
+              animate={isInView ? "animate" : "initial"}
+              custom={0.5}
               className="absolute"
-            />
-            <Image src={GearIcon} alt="Gear Icon" className="relative z-10" />
+            >
+              <Image
+                src={GearIconBg}
+                alt="Gear Icon Background"
+                className="w-full h-auto"
+              />
+            </motion.div>
+            <motion.div
+              ref={ref}
+              variants={spinClockwise}
+              initial="initial"
+              animate={isInView ? "animate" : "initial"}
+              whileHover="hover"
+              custom={1.5}
+              className="relative z-100"
+            >
+              <Image src={GearIcon} alt="Gear Icon" className="w-full h-auto" />
+            </motion.div>
           </div>
           <div>
-            <p className="text-white font-bold sm:text-4xl text-xl text-center tracking-widest h-20 flex justify-center items-center">
-              Our Manufacturing Services
-            </p>
+            <motion.div
+              ref={ref}
+              variants={fadeInFromBottom}
+              initial="initial"
+              animate={isInView ? "animate" : "initial"}
+              custom={0.5}
+              className="text-white font-bold sm:text-4xl text-xl text-center tracking-widest h-20 flex justify-center items-center"
+            >
+              <p className="w-full h-auto">Our Manufacturing Services</p>
+            </motion.div>
           </div>
         </div>
         <div>
