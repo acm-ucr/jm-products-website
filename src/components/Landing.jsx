@@ -5,6 +5,11 @@ import Image from "next/image";
 import Button from "@/components/Button";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import {
+  fadeInFromLeft,
+  fadeInFromRight,
+  fadeInFromTop,
+} from "@/utils/animationVariations";
 
 import Logo from "@/public/svg/J&MLogo.svg";
 import LandingBackground from "@/public/images/home/LandingBackground.webp";
@@ -18,35 +23,6 @@ import RightCable from "@/public/images/home/RightCable.webp";
 import RightCableWhite from "@/public/images/home/RightCableWhite.webp";
 import RightClamp from "@/public/images/home/RightClamp.webp";
 import RightJet from "@/public/images/home/RightJet.webp";
-
-const fadeInFromLeft = {
-  initial: { opacity: 0, x: -100 },
-  animate: (custom) => ({
-    opacity: 1,
-    x: 0,
-    transition: { duration: 0.5, delay: custom, ease: "easeOut" },
-  }),
-  hover: { scale: 1.1 },
-};
-
-const fadeInFromRight = {
-  initial: { opacity: 0, x: +100 },
-  animate: (custom) => ({
-    opacity: 1,
-    x: 0,
-    transition: { duration: 0.5, delay: custom, ease: "easeOut" },
-  }),
-  hover: { scale: 1.1 },
-};
-
-const fadeInFromTop = {
-  initial: { opacity: 0, y: -50 },
-  animate: (custom) => ({
-    opacity: 1,
-    y: 0,
-    transition: { duration: 0.5, delay: custom, ease: "easeOut" },
-  }),
-};
 
 const Landing = () => {
   return (
