@@ -8,7 +8,7 @@ import Image from "next/image";
 
 const WhyJM = () => {
   return (
-    <div className="w-5/6 md:w-2/3 flex flex-col justify-center gap-6 md:gap-10">
+    <div className="w-5/6 md:w-2/3 flex flex-col justify-center gap-6 md:gap-10 font-hk">
       <Header title="WHY J&M" size={"text-3xl"} />
       <div className="w-full flex flex-col justify-center items-end">
         <div className="w-full md:w-11/12 flex flex-col items-center justify-center gap-2 md:gap-4">
