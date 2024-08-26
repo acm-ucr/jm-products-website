@@ -35,6 +35,7 @@ const BulletPoints = ({ title, data }) => {
         initial="start"
         whileInView="end"
         transition={{ duration: 0.4, delay: 0.3 }}
+        viewport={{ once: true, amount: 0.4 }}
       >
         <p
           className={`font-hk bg-gradient-to-r from-jm-blue-300 to-jm-blue-100 bg-clip-text text-transparent m-0 text-2xl md:text-3xl tracking-widest font-bold mb-1 p-1`}
@@ -49,6 +50,7 @@ const BulletPoints = ({ title, data }) => {
         initial="start"
         whileInView="end"
         transition={{ duration: 0.4, delay: 0.3 }}
+        viewport={{ once: true, amount: 0.4 }}
       >
         <ul className="text-left text-xs lg:text-sm list-disc flex flex-col font-hk w-full lg:w-7/12 sm:gap-1 tracking-wider list-inside">
           {data.map((item, index) => (
