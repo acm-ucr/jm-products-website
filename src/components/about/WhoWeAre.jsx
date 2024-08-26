@@ -38,51 +38,26 @@ const WhoWeAre = () => {
       </motion.div>
 
       <div className="flex flex-col space-y-10">
-        <motion.div
-          variants={fadeInFromTop}
-          viewport={{ once: true, amount: 0 }}
-          initial="initial"
-          whileInView="animate"
-          custom={0.3}
-        >
-          <p className="font-hk leading-relaxed text-xs md:text-lg text-left">
-            J&M Products is dedicated to the turnkey manufacturing and marketing
-            of high quality products and services. Through leadership,
-            innovation and continuous improvement we are able to achieve the
-            highest level of customer satisfaction. Our AS9100/ISO9001 approved
-            quality management system applies to all aspects of the company. Our
-            goal is to deliver defect-free product on-time at the most
-            competitive price possible.
-          </p>
-        </motion.div>
+        <p className="font-hk leading-relaxed text-left md:text-center text-xs md:text-base">
+          J&M Products is dedicated to the turnkey manufacturing and marketing
+          of high quality products and services. Through leadership, innovation
+          and continuous improvement we are able to achieve the highest level of
+          customer satisfaction. Our AS9100/ISO9001 approved quality management
+          system applies to all aspects of the company. Our goal is to deliver
+          defect-free product on-time at the most competitive price possible.
+        </p>
 
-        <motion.div
-          variants={fadeInFromTop}
-          viewport={{ once: true, amount: 0 }}
-          initial="initial"
-          whileInView="animate"
-          custom={0.4}
-        >
-          <p className="font-hk bg-gradient-to-r from-jm-blue-300 to-jm-blue-100 bg-clip-text text-transparent text-base md:text-4xl tracking-widest font-bold text-left md:text-center">
-            Brochures
-          </p>
-        </motion.div>
+        <p className="font-hk bg-gradient-to-r from-jm-blue-300 to-jm-blue-100 bg-clip-text text-transparent text-sm md:text-3xl tracking-widest font-bold text-left md:text-center">
+          Brochures
+        </p>
 
-        <motion.div
-          variants={fadeInFromTop}
-          viewport={{ once: true, amount: 0 }}
-          initial="initial"
-          whileInView="animate"
-          custom={0.5}
-        >
-          <div className="w-full flex justify-center md:justify-end">
-            <Image
-              src={JMbrochures}
-              alt="Brochures"
-              className="w-full max-w-fit"
-            />
-          </div>
-        </motion.div>
+        <div className="w-full flex justify-center md:justify-end">
+          <Image
+            src={JMbrochures}
+            alt="Brochures"
+            className="w-full max-w-fit"
+          />
+        </div>
       </div>
     </div>
   );

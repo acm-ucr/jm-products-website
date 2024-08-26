@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <div className="w-full grid grid-cols-1 grid-rows-1 md:grid-cols-3 md:grid-rows-2 py-5 px-10 gap-2 font-javanese text-sm leading-5">
+    <div className="w-full grid grid-cols-1 grid-rows-1 md:grid-cols-3 md:grid-rows-2 py-5 px-10 gap-2 font-javanese leading-5">
       <div className="grid md:grid-cols-subgrid gap-4 md:col-span-3">
         <div className="flex justify-center md:col-start-2 md:h-11">
           <Image alt="logo" src={logo} className="object-contain" />
