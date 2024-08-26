@@ -1,7 +1,15 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
 import Button from "@/components/Button";
 import Link from "next/link";
+import { motion } from "framer-motion";
+import {
+  fadeInFromLeft,
+  fadeInFromRight,
+  fadeInFromTop,
+} from "@/utils/animationVariations";
 
 import Logo from "@/public/svg/J&MLogo.svg";
 import LandingBackground from "@/public/images/home/LandingBackground.webp";
@@ -25,65 +33,156 @@ const Landing = () => {
         className="absolute bottom-[100px] -z-10"
       />
       <div className="absolute top-[5px] md:top-[10px] 2xl:top-[153px] -left-[60px] md:-left-[120px] 2xl:-left-[107px]">
-        <div className="relative flex items-center justify-center size-[100px] md:size-[200px] 2xl:size-[288px] bg-transparent border border-[#DDDDDD] rounded-full">
-          <div className="absolute size-[75%] 2xl:size-[80%] bg-transparent border border-[#DDDDDD] rounded-full"></div>
-        </div>
+        <motion.div
+          initial={{ opacity: 0, scale: 1.5 }} // Start larger and faded
+          animate={{ opacity: 1, scale: 1 }} // Animate to full opacity and correct size
+          transition={{ duration: 1, ease: "easeOut" }} // Adjust duration and easing
+          className="relative flex items-center justify-center size-[100px] md:size-[200px] 2xl:size-[288px] bg-transparent border border-[#DDDDDD] rounded-full"
+        >
+          <motion.div
+            initial={{ opacity: 0, scale: 1.5 }} // Start larger and faded
+            animate={{ opacity: 1, scale: 1 }} // Animate to full opacity and correct size
+            transition={{ duration: 1, ease: "easeOut" }} // Adjust duration and easing
+            className="absolute size-[75%] 2xl:size-[80%] bg-transparent border border-[#DDDDDD] rounded-full"
+          />
+        </motion.div>
       </div>
-      <Image
-        src={LeftCable}
-        alt="Left Cable"
+      <motion.div
+        variants={fadeInFromLeft}
+        initial="initial"
+        animate="animate"
+        whileHover="hover"
+        custom={1.8}
         className="absolute -top-[15px] md:-top-[30px] 2xl:top-[90px] left-[5px] md:left-[10px] 2xl:left-[80px] w-[65px] md:w-[130px] 2xl:w-[195px]"
-      />
-      <Image
-        src={LeftClamp}
-        alt="Left Clamp"
+      >
+        <Image src={LeftCable} alt="Left Cable" className="w-full h-auto" />
+      </motion.div>
+      <motion.div
+        variants={fadeInFromLeft}
+        initial="initial"
+        animate="animate"
+        whileHover="hover"
+        custom={1}
         className="absolute -top-[20px] md:-top-[40px] 2xl:top-[75px] -left-[70px] md:-left-[140px] 2xl:-left-[160px] w-[90px] md:w-[180px] 2xl:w-[270px]"
-      />
-      <Image
-        src={LeftRoundClamp}
-        alt="Left Round Clamp"
+      >
+        <Image src={LeftClamp} alt="Left Clamp" className="w-full h-auto" />
+      </motion.div>
+      <motion.div
+        variants={fadeInFromLeft}
+        initial="initial"
+        animate="animate"
+        whileHover="hover"
+        custom={2.2}
         className="absolute top-[40px] md:top-[80px] 2xl:top-[250px] left-[35px] md:left-[70px] 2xl:left-[175px] w-[70px] md:w-[140px] 2xl:w-[210px]"
-      />
-      <Image
-        src={LeftWires}
-        alt="Left Wires"
+      >
+        <Image
+          src={LeftRoundClamp}
+          alt="Left Round Clamp"
+          className="w-full h-auto"
+        />
+      </motion.div>
+      <motion.div
+        variants={fadeInFromLeft}
+        initial="initial"
+        animate="animate"
+        whileHover="hover"
+        custom={1.4}
         className="absolute top-[50px] md:top-[100px] 2xl:top-[270px] -left-[25px] md:-left-[50px] 2xl:-left-[20px] w-[65px] md:w-[130px] 2xl:w-[195px]"
-      />
+      >
+        <Image src={LeftWires} alt="Left Wires" className="w-full h-auto" />
+      </motion.div>
       <div className="absolute top-[30px] md:top-[60px] 2xl:top-[316px] -right-[70px] md:-right-[140px] 2xl:-right-[116px]">
-        <div className="relative flex items-center justify-center size-[100px] md:size-[200px] 2xl:size-[288px] bg-transparent border border-[#DDDDDD] rounded-full">
-          <div className="absolute size-[75%] 2xl:size-[80%] bg-transparent border border-[#DDDDDD] rounded-full"></div>
-        </div>
+        <motion.div
+          initial={{ opacity: 0, scale: 1.5 }} // Start larger and faded
+          animate={{ opacity: 1, scale: 1 }} // Animate to full opacity and correct size
+          transition={{ duration: 1, ease: "easeOut" }} // Adjust duration and easing
+          className="relative flex items-center justify-center size-[100px] md:size-[200px] 2xl:size-[288px] bg-transparent border border-[#DDDDDD] rounded-full"
+        >
+          <motion.div
+            initial={{ opacity: 0, scale: 1.5 }} // Start larger and faded
+            animate={{ opacity: 1, scale: 1 }} // Animate to full opacity and correct size
+            transition={{ duration: 1, ease: "easeOut" }} // Adjust duration and easing
+            className="absolute size-[75%] 2xl:size-[80%] bg-transparent border border-[#DDDDDD] rounded-full"
+          />
+        </motion.div>
       </div>
-      <Image
-        src={RightCableWhite}
-        alt="Right Cable White"
+
+      <motion.div
+        variants={fadeInFromRight}
+        initial="initial"
+        animate="animate"
+        whileHover="hover"
+        custom={1.2}
         className="absolute -top-[35px] md:-top-[70px] 2xl:top-[105px] -right-[70px] md:-right-[140px] 2xl:-right-[115px] w-[90px] md:w-[180px] 2xl:w-[270px]"
-      />
-      <Image
-        src={RightClamp}
-        alt="Right Clamp"
+      >
+        <Image
+          src={RightCableWhite}
+          alt="Right Cable White"
+          className="w-full h-auto"
+        />
+      </motion.div>
+      <motion.div
+        variants={fadeInFromRight}
+        initial="initial"
+        animate="animate"
+        whileHover="hover"
+        custom={2}
         className="absolute -top-[20px] md:-top-[40px] 2xl:top-[145px] right-[10px] md:right-[20px] 2xl:right-[125px] w-[65px] md:w-[130px] 2xl:w-[195px]"
-      />
-      <Image
-        src={RightJet}
-        alt="Right Jet"
+      >
+        <Image src={RightClamp} alt="Right Clamp" className="w-full h-auto" />
+      </motion.div>
+      <motion.div
+        variants={fadeInFromRight}
+        initial="initial"
+        animate="animate"
+        whileHover="hover"
+        custom={1.6}
         className="absolute top-[30px] md:top-[60px] 2xl:top-[300px] -right-[30px] md:-right-[60px] 2xl:right-[10px] w-[90px] md:w-[180px] 2xl:w-[270px]"
-      />
-      <Image
-        src={RightCable}
-        alt="Right Cable"
+      >
+        <Image src={RightJet} alt="Right Jet" className="w-full h-auto" />
+      </motion.div>
+      <motion.div
+        variants={fadeInFromRight}
+        initial="initial"
+        animate="animate"
+        whileHover="hover"
+        custom={2.4}
         className="absolute top-[100px] md:top-[200px] 2xl:top-[510px] right-[15px] md:right-[30px] 2xl:right-[130px] w-[65px] md:w-[130px] 2xl:w-[195px]"
-      />
+      >
+        <Image src={RightCable} alt="Right Cable" className="w-full h-auto" />
+      </motion.div>
       <div className="flex flex-col items-center mt-[30%] md:mt-[20%] lg:mt-[15%] xl:mt-[5%] space-y-2 md:space-y-4 2xl:space-y-6">
         <div className="flex flex-col items-center space-y-2 md:space-y-4 2xl:space-y-6">
-          <Image src={Logo} alt="J&M Logo" className="w-full max-w-full" />
-          <p className="font-normal font-hk md:text-2xl tracking-widest text-transparent bg-clip-text bg-gradient-to-r from-[#3A4F85] to-[#8EA7C7]">
-            The industry leader in
-          </p>
+          <motion.div
+            variants={fadeInFromTop}
+            initial="initial"
+            animate="animate"
+            custom={1}
+            className="w-full max-w-full"
+          >
+            <Image src={Logo} alt="J&M Logo" className="w-full h-auto" />
+          </motion.div>
+          <motion.div
+            variants={fadeInFromTop}
+            initial="initial"
+            animate="animate"
+            custom={1.2}
+          >
+            <p className="font-normal font-hk md:text-2xl tracking-widest text-transparent bg-clip-text bg-gradient-to-r from-[#3A4F85] to-[#8EA7C7]">
+              The industry leader in
+            </p>
+          </motion.div>
         </div>
-        <p className="font-bold font-hk md:text-2xl tracking-widest text-transparent bg-clip-text bg-gradient-to-r from-[#3A4F85] to-[#8EA7C7]">
-          Line Support Clamps & Wire Harnesses
-        </p>
+        <motion.div
+          variants={fadeInFromTop}
+          initial="initial"
+          animate="animate"
+          custom={1.4}
+        >
+          <p className="font-bold font-hk md:text-2xl tracking-widest text-transparent bg-clip-text bg-gradient-to-r from-[#3A4F85] to-[#8EA7C7]">
+            Line Support Clamps & Wire Harnesses
+          </p>
+        </motion.div>
         <div className="flex space-x-4">
           <Button
             text="Learn More"
