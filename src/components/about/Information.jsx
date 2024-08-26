@@ -15,7 +15,12 @@ const Information = () => {
                 {item.points.map((point, pointIndex) => (
                   <li key={pointIndex}>
                     {point.url ? (
-                      <PDFLink text={point.text} link={point.url}></PDFLink>
+                      <PDFLink
+                        text={point.text}
+                        link={point.url}
+                        textColor={"text-jm-blue-200"}
+                        hoverColor={"hover:!text-jm-blue-300"}
+                      ></PDFLink>
                     ) : (
                       <p> {point.text}</p>
                     )}

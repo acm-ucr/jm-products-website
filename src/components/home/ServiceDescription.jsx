@@ -2,7 +2,13 @@
 import React from "react";
 import Image from "next/image";
 import Button from "../Button";
-import { useState } from "react";
+import { useState, useRef } from "react";
+import { motion, useInView } from "framer-motion";
+import {
+  fadeInFromBottom,
+  fadeInFromLeft,
+  fadeInFromRight,
+} from "@/utils/animationVariations";
 
 const ServiceDescription = ({ img, title, desc, extendedDesc, float }) => {
   const [isExtended, setIsExtended] = useState(false);
@@ -10,6 +16,15 @@ const ServiceDescription = ({ img, title, desc, extendedDesc, float }) => {
   const handleClick = () => {
     setIsExtended(!isExtended);
   };
+
+  const ref = useRef(null);
+  const isInView = useInView(ref, {
+    triggerOnce: true,
+    threshold: 0.2,
+  });
+
+  const imageVariant = float === "right" ? fadeInFromRight : fadeInFromLeft;
+  const textVariant = float === "right" ? fadeInFromLeft : fadeInFromRight;
 
   return (
     <div
@@ -23,7 +38,20 @@ const ServiceDescription = ({ img, title, desc, extendedDesc, float }) => {
         } `}
       >
         <div className="sm:w-auto w-2/5">
-          <Image src={img} alt="Service Description Picture" />
+          <motion.div
+            ref={ref}
+            variants={imageVariant}
+            initial="initial"
+            animate={isInView ? "animate" : "initial"}
+            whileHover="hover"
+            custom={1}
+          >
+            <Image
+              src={img}
+              alt="Service Description Picture"
+              className="w-full h-auto"
+            />
+          </motion.div>
         </div>
       </div>
       <div className="flex flex-col sm:w-3/4 w-full">
@@ -32,25 +60,41 @@ const ServiceDescription = ({ img, title, desc, extendedDesc, float }) => {
             float === "right" ? "text-right" : ""
           }`}
         >
-          {title}
+          <motion.div
+            ref={ref}
+            variants={fadeInFromBottom}
+            initial="initial"
+            animate={isInView ? "animate" : "initial"}
+            custom={1}
+          >
+            {title}
+          </motion.div>
         </h2>
         <div
           className={`text-white text-left text-balance my-9 sm:text-lg text-sm ${
             float === "right" ? "text-right" : ""
           }`}
         >
-          {isExtended
-            ? extendedDesc.map((segment, index) => (
-                <p
-                  key={index}
-                  className={`${
-                    index !== extendedDesc.length - 1 ? "mb-9" : ""
-                  }`}
-                >
-                  {segment}
-                </p>
-              ))
-            : desc}
+          <motion.div
+            ref={ref}
+            variants={textVariant}
+            initial="initial"
+            animate={isInView ? "animate" : "initial"}
+            custom={1}
+          >
+            {isExtended
+              ? extendedDesc.map((segment, index) => (
+                  <p
+                    key={index}
+                    className={`${
+                      index !== extendedDesc.length - 1 ? "mb-9" : ""
+                    } w-full h-auto`}
+                  >
+                    {segment}
+                  </p>
+                ))
+              : desc}
+          </motion.div>
         </div>
         <div
           className={`flex justify-start mb-20 ${

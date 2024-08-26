@@ -17,6 +17,7 @@ const page = () => {
           text="J&M Products, with over 50 years of manufacturing experience, assists companies in addressing these challenges. Working from your product documentation or sample, our engineering staff will determine the manufacturability using the information provided. We will then make recommendations, if needed to update or create drawings to facilitate a smooth transition to our manufacturing facility."
           img={ElectricalAssembly1}
           float="right"
+          reverseOnMobile={true}
         />
       </div>
       <BlueText text="J&M can tailor a plan to incorporate any residual inventory that you may have as a result from building in-house." />
