@@ -26,7 +26,7 @@ const fadeInFromTop = {
 
 const WhoWeAre = () => {
   return (
-    <div className="max-w-7xl mx-auto px-4 py-8 flex flex-col gap-10">
+    <div className="w-5/6 md:w-2/3 flex flex-col gap-10">
       <motion.div
         variants={SlideInFromLeft}
         viewport={{ once: true, amount: 0 }}
