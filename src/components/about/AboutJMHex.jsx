@@ -7,7 +7,7 @@ const AboutJMHex = () => {
     <Image
       src={JMHexPhoto}
       alt="JM Products Hex Image"
-      className="w-3/4 md:w-1/3"
+      className="w-3/4 md:w-1/3 animate-jump-in"
     />
   );
 };

@@ -9,7 +9,7 @@ import { backOut, motion } from "framer-motion";
 const imageAnimation = {
   start: {
     opacity: 0,
-    x: -200,
+    x: -100,
     backOut,
   },
   end: {
@@ -25,7 +25,8 @@ const LogoStrip = () => {
         variants={imageAnimation}
         initial="start"
         whileInView="end"
-        transition={{ duration: 0.6, delay: 0.7 }}
+        transition={{ duration: 0.6, delay: 0.5 }}
+        viewport={{ once: true, amount: 0.2 }}
       >
         <Image src={SAE} alt="SAE Logo" className="w-20 h-14 lg:w-28 lg:h-20" />
       </motion.div>
@@ -33,7 +34,8 @@ const LogoStrip = () => {
         variants={imageAnimation}
         initial="start"
         whileInView="end"
-        transition={{ duration: 0.6, delay: 0.5 }}
+        transition={{ duration: 0.6, delay: 0.4 }}
+        viewport={{ once: true, amount: 0.2 }}
       >
         <Image
           src={ANSI}
@@ -46,6 +48,7 @@ const LogoStrip = () => {
         initial="start"
         whileInView="end"
         transition={{ duration: 0.6, delay: 0.3 }}
+        viewport={{ once: true, amount: 0.2 }}
       >
         <Image
           src={NAS}
