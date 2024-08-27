@@ -12,7 +12,7 @@ const CustomerConcernsAnimation = {
 };
 
 const transition = {
-  duration: 0.8,
+  duration: 0.5,
 };
 
 const CustomerConcerns = () => {
