@@ -26,7 +26,8 @@ const Description = ({
       variants={descriptionAnimations}
       initial="start"
       whileInView="end"
-      transition={{ duration: 0.2, delay: 0.3 }}
+      transition={{ duration: 0.2, delay: 0.2 }}
+      viewport={{ once: true, amount: 0.2 }}
     >
       <div
         className={`flex flex-col sm:flex-row items-center ${

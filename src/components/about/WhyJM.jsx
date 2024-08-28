@@ -47,6 +47,7 @@ const WhyJM = () => {
             initial="initial"
             whileInView="animate"
             custom={0.1}
+            className="flex flex-col gap-3"
           >
             <p>
               At J&M response time is a critical part of total customer
@@ -72,6 +73,7 @@ const WhyJM = () => {
             initial="initial"
             whileInView="animate"
             custom={0.1}
+            className="flex flex-col gap-3"
           >
             <div className="w-full md:w-11/12 flex flex-col items-center justify-center gap-2 md:gap-4">
               <p>
@@ -83,7 +85,7 @@ const WhyJM = () => {
               </p>
             </div>
 
-            <div className="flex flex-col md:flex-row items-center">
+            <div className="flex flex-col md:flex-row items-center gap-3">
               <div className="flex flex-row w-full items-center justify-end">
                 <div className="flex flex-row gap-2 justify-center w-full">
                   <Image src={JMaward1} alt="Award1" className="w-2/5" />
