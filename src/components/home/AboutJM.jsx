@@ -16,8 +16,8 @@ import {
 const AboutJM = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, {
-    triggerOnce: true,
-    threshold: 0.2,
+    once: true,
+    amount: 0.2,
   });
 
   return (
@@ -31,7 +31,12 @@ const AboutJM = () => {
         custom={0.5}
         className="mr-4 mt-24 mb-12 pr-7 py-0.5 max-md:hidden"
       >
-        <Image src={decor} alt="Placeholder" className="w-full h-auto" />
+        <Image
+          src={decor}
+          alt="Placeholder"
+          className="w-full h-auto"
+          priority
+        />
       </motion.div>
       <div className="md:mr-32 flex flex-col justify-center">
         <div className="flex">

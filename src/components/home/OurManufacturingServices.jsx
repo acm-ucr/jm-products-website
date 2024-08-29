@@ -17,8 +17,8 @@ import WireHarnesses from "@/public/images/home/WireHarnesses.webp";
 const OurManufacturingServices = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, {
-    triggerOnce: true,
-    threshold: 0.2,
+    once: true,
+    amount: 0.2,
   });
 
   return (
