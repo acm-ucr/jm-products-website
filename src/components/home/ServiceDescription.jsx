@@ -20,7 +20,7 @@ const ServiceDescription = ({ img, title, desc, extendedDesc, float }) => {
   const ref = useRef(null);
   const isInView = useInView(ref, {
     once: true,
-    threshold: 0.1,
+    amount: 0.1,
   });
 
   const imageVariant = float === "right" ? fadeInFromRight : fadeInFromLeft;

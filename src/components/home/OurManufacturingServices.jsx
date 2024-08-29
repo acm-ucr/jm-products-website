@@ -18,7 +18,7 @@ const OurManufacturingServices = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, {
     once: true,
-    threshold: 0.2,
+    amount: 0.2,
   });
 
   return (
