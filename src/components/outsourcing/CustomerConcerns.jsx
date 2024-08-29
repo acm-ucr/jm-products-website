@@ -25,11 +25,11 @@ const CustomerConcerns = () => {
       viewport={{ once: true, amount: 0.5 }}
       className="w-3/4 xl:w-2/3"
     >
-      <div className="w-3/4 xl:w-2/3 font-hk flex flex-col justify-center items-center gap-10">
+      <div className="w-full font-hk flex flex-col justify-center items-center gap-6 md:gap-10">
         <h2 className="text-xl font-semibold w-full">
           Normal Customer Concerns:
         </h2>
-        <ul className="list-disc space-y-1">
+        <ul className="list-disc space-y-1 list-inside">
           <li className="text-sm">
             Our documentation doesn&apos;t always reflect the current state of
             the manufactured product.

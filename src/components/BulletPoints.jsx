@@ -28,7 +28,7 @@ const bulletAnimations = {
 
 const BulletPoints = ({ title, data }) => {
   return (
-    <div className="w-5/6 lg:w-2/3 gap-10 flex flex-col justify-center item">
+    <div className="w-5/6 lg:w-2/3 gap-10 flex flex-col justify-center">
       <motion.div
         className="flex flex-col w-full"
         variants={bulletTitleAnimations}
@@ -45,7 +45,7 @@ const BulletPoints = ({ title, data }) => {
         <div className="border-t-4 border-solid border-jm-blue-200 w-full m-0" />
       </motion.div>
       <motion.div
-        className="flex lg:justify-center "
+        className="flex lg:justify-center"
         variants={bulletAnimations}
         initial="start"
         whileInView="end"
