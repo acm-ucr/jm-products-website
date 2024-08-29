@@ -7,7 +7,7 @@ import JMbrochures from "/public/images/about/JMbrochures.webp";
 import { motion } from "framer-motion";
 
 const SlideInFromLeft = {
-  initial: { opacity: 0, x: -1000 },
+  initial: { opacity: 0, x: -50 },
   animate: (custom) => ({
     opacity: 1,
     x: 0,
