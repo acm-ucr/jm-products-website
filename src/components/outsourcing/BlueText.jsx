@@ -16,7 +16,7 @@ const BlueTextAnimation = {
 const BlueText = ({ text }) => {
   return (
     <motion.div
-      className="w-3/4 xl:w-2/3 flex flex-col justify-center items-center"
+      className="w-3/4 xl:w-2/3 flex flex-col justify-center items-center font-hk"
       variants={BlueTextAnimation}
       initial="start"
       whileInView="end"

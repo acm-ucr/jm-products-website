@@ -37,9 +37,11 @@ const Information = () => {
               whileInView="animate"
               custom={0.05}
             >
-              <h3 className="font-bold text-base font-hk">{item.title}</h3>
+              <h3 className="font-bold text-base md:text-lg font-hk">
+                {item.title}
+              </h3>
               {item.points && (
-                <ul className="sm:w-full lg:w-5/6 text-sm list-disc flex flex-col font-hk pl-12 tracking-wider gap-2.5">
+                <ul className="sm:w-full lg:w-5/6 text-sm  list-disc flex flex-col font-hk pl-12 tracking-wider gap-2.5">
                   {item.points.map((point, pointIndex) => (
                     <li key={pointIndex}>
                       {point.url ? (
@@ -48,7 +50,7 @@ const Information = () => {
                           link={point.url}
                           textColor={"text-jm-blue-200"}
                           hoverColor={"hover:!text-jm-blue-300"}
-                        ></PDFLink>
+                        />
                       ) : (
                         <p> {point.text}</p>
                       )}
