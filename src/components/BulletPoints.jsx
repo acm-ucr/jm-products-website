@@ -52,7 +52,7 @@ const BulletPoints = ({ title, data }) => {
         transition={{ duration: 0.4, delay: 0.3 }}
         viewport={{ once: true, amount: 0.4 }}
       >
-        <ul className="text-left text-xs lg:text-sm list-disc flex flex-col font-hk w-full lg:w-7/12 sm:gap-1 tracking-wider list-inside">
+        <ul className="text-left text-sm lg:text-base list-disc flex flex-col font-hk w-full lg:w-7/12 gap-1 sm:gap-1 tracking-wider list-inside">
           {data.map((item, index) => (
             <li key={index}>{item}</li>
           ))}
