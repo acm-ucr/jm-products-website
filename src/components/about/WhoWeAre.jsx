@@ -63,7 +63,7 @@ const WhoWeAre = () => {
           whileInView="animate"
           custom={0.4}
         >
-          <p className="font-hk bg-gradient-to-r from-jm-blue-300 to-jm-blue-100 bg-clip-text text-transparent text-sm md:text-3xl tracking-widest font-bold text-left md:text-center">
+          <p className="font-hk bg-gradient-to-r from-jm-blue-300 to-jm-blue-100 bg-clip-text text-transparent text-base md:text-3xl tracking-widest font-bold text-left md:text-center">
             Brochures
           </p>
         </motion.div>
