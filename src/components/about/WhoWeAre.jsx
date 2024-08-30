@@ -7,7 +7,7 @@ import JMbrochures from "/public/images/about/JMbrochures.webp";
 import { motion } from "framer-motion";
 
 const SlideInFromLeft = {
-  initial: { opacity: 0, x: -1000 },
+  initial: { opacity: 0, x: -50 },
   animate: (custom) => ({
     opacity: 1,
     x: 0,
@@ -45,7 +45,7 @@ const WhoWeAre = () => {
           whileInView="animate"
           custom={0.3}
         >
-          <p className="font-hk leading-relaxed text-left md:text-center text-xs md:text-base">
+          <p className="font-hk leading-relaxed text-left md:text-center text-base md:text-base">
             J&M Products is dedicated to the turnkey manufacturing and marketing
             of high quality products and services. Through leadership,
             innovation and continuous improvement we are able to achieve the
@@ -63,7 +63,7 @@ const WhoWeAre = () => {
           whileInView="animate"
           custom={0.4}
         >
-          <p className="font-hk bg-gradient-to-r from-jm-blue-300 to-jm-blue-100 bg-clip-text text-transparent text-sm md:text-3xl tracking-widest font-bold text-left md:text-center">
+          <p className="font-hk bg-gradient-to-r from-jm-blue-300 to-jm-blue-100 bg-clip-text text-transparent text-base md:text-3xl tracking-widest font-bold text-left md:text-center">
             Brochures
           </p>
         </motion.div>

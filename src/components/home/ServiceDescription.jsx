@@ -19,8 +19,8 @@ const ServiceDescription = ({ img, title, desc, extendedDesc, float }) => {
 
   const ref = useRef(null);
   const isInView = useInView(ref, {
-    triggerOnce: true,
-    threshold: 0.2,
+    once: true,
+    amount: 0.1,
   });
 
   const imageVariant = float === "right" ? fadeInFromRight : fadeInFromLeft;
@@ -28,7 +28,7 @@ const ServiceDescription = ({ img, title, desc, extendedDesc, float }) => {
 
   return (
     <div
-      className={`flex flex-col sm:flex-row ${
+      className={`font-hk flex flex-col sm:flex-row ${
         float === "right" ? "sm:flex-row-reverse" : ""
       }`}
     >
@@ -44,7 +44,7 @@ const ServiceDescription = ({ img, title, desc, extendedDesc, float }) => {
             initial="initial"
             animate={isInView ? "animate" : "initial"}
             whileHover="hover"
-            custom={1}
+            custom={0.5}
           >
             <Image
               src={img}
@@ -65,7 +65,7 @@ const ServiceDescription = ({ img, title, desc, extendedDesc, float }) => {
             variants={fadeInFromBottom}
             initial="initial"
             animate={isInView ? "animate" : "initial"}
-            custom={1}
+            custom={0.5}
           >
             {title}
           </motion.div>
@@ -80,7 +80,7 @@ const ServiceDescription = ({ img, title, desc, extendedDesc, float }) => {
             variants={textVariant}
             initial="initial"
             animate={isInView ? "animate" : "initial"}
-            custom={1}
+            custom={0.5}
           >
             {isExtended
               ? extendedDesc.map((segment, index) => (

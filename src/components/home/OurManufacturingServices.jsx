@@ -17,12 +17,12 @@ import WireHarnesses from "@/public/images/home/WireHarnesses.webp";
 const OurManufacturingServices = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, {
-    triggerOnce: true,
-    threshold: 0.2,
+    once: true,
+    amount: 0.2,
   });
 
   return (
-    <div className="w-full bg-jm-blue-200 flex justify-center items-center">
+    <div className="w-full bg-jm-blue-200 flex justify-center items-center font-hk">
       <div className="w-5/6 flex flex-col items-center justify-center sm:gap-24 sm:py-24 gap-10 py-10">
         <div className="flex items-center justify-center">
           <div className="relative w-20 h-20 flex justify-center items-center sm:top-1">

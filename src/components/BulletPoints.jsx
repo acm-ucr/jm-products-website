@@ -28,7 +28,7 @@ const bulletAnimations = {
 
 const BulletPoints = ({ title, data }) => {
   return (
-    <div className="w-5/6 lg:w-2/3 gap-10 flex flex-col justify-center item">
+    <div className="w-5/6 lg:w-2/3 gap-10 flex flex-col justify-center">
       <motion.div
         className="flex flex-col w-full"
         variants={bulletTitleAnimations}
@@ -45,14 +45,14 @@ const BulletPoints = ({ title, data }) => {
         <div className="border-t-4 border-solid border-jm-blue-200 w-full m-0" />
       </motion.div>
       <motion.div
-        className="flex lg:justify-center "
+        className="flex lg:justify-center"
         variants={bulletAnimations}
         initial="start"
         whileInView="end"
         transition={{ duration: 0.4, delay: 0.3 }}
         viewport={{ once: true, amount: 0.4 }}
       >
-        <ul className="text-left text-xs lg:text-sm list-disc flex flex-col font-hk w-full lg:w-7/12 sm:gap-1 tracking-wider list-inside">
+        <ul className="text-left text-sm lg:text-base list-disc flex flex-col font-hk w-full lg:w-7/12 gap-1 sm:gap-1 tracking-wider list-inside">
           {data.map((item, index) => (
             <li key={index}>{item}</li>
           ))}
