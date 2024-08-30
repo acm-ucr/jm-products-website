@@ -28,7 +28,7 @@ const ServiceDescription = ({ img, title, desc, extendedDesc, float }) => {
 
   return (
     <div
-      className={`flex flex-col sm:flex-row ${
+      className={`font-hk flex flex-col sm:flex-row ${
         float === "right" ? "sm:flex-row-reverse" : ""
       }`}
     >
