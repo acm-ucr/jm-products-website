@@ -30,19 +30,19 @@ const CustomerConcerns = () => {
           Normal Customer Concerns:
         </h2>
         <ul className="list-disc space-y-1">
-          <li className="text-sm">
+          <li className="text-sm md:text-base">
             Our documentation doesn&apos;t always reflect the current state of
             the manufactured product.
           </li>
-          <li className="text-sm">
+          <li className="text-sm md:text-base">
             Engineering resources are often too thin to update specifications
             accordingly.
           </li>
-          <li className="text-sm">
+          <li className="text-sm md:text-base">
             Since we&apos;ve been building in house what do we do with our
             residual inventory?
           </li>
-          <li className="text-sm">
+          <li className="text-sm md:text-base">
             How do we convey to J&amp;M what our requirements are?
           </li>
         </ul>

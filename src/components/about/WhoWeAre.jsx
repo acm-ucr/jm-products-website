@@ -45,7 +45,7 @@ const WhoWeAre = () => {
           whileInView="animate"
           custom={0.3}
         >
-          <p className="font-hk leading-relaxed text-left md:text-center text-basebu md:text-base">
+          <p className="font-hk leading-relaxed text-left md:text-center text-base md:text-base">
             J&M Products is dedicated to the turnkey manufacturing and marketing
             of high quality products and services. Through leadership,
             innovation and continuous improvement we are able to achieve the
