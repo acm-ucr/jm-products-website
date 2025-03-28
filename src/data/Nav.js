@@ -9,26 +9,26 @@ export const items = [
   },
   {
     name: "ABOUT",
-    link: "about",
+    link: "/about",
   },
   {
     name: "LINE CLAMPS",
-    link: "line-clamps",
+    link: "/line-clamps",
   },
   {
     name: "WIRE HARNESSES",
-    link: "wire-harnesses",
+    link: "/wire-harnesses",
   },
   {
     name: "OUTSOURCING",
-    link: "outsourcing",
+    link: "/outsourcing",
   },
   {
     name: "CONTACT US",
-    link: "contact-us",
+    link: "/contact-us",
   },
   {
     name: "RFQ",
-    link: "rfq",
+    link: "/rfq",
   },
 ];

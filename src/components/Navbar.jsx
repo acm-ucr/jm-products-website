@@ -36,7 +36,7 @@ const Navigation = () => {
         className="items-center lg:justify-end justify-center flex"
       >
         <Nav className="w-full no-underline font-normal flex items-center text-center text-sm lg:text-base justify-end pr-5 gap-10">
-          {items.map(({ link, name }, index) => (
+          {items.map(({ name, link }, index) => (
             <Nav.Link
               as={Link}
               key={index}
